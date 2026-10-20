@@ -1,0 +1,200 @@
+{
+  "team": "Men's 1st XI",
+  "coach": "Head Coach",
+  "date": "Tuesday training",
+  "venue": "Half pitch (full pitch for final game)",
+  "duration": 75,
+  "players": "16 outfield + 2 GK",
+  "equipment": ["Balls x20", "Cones (4 colours)", "Bibs x3 sets", "Mini goals x4"],
+  "theme": "Pressing from the front & winning the ball high",
+  "focus": "Out of possession: forward press, cutting passing lanes, transition to attack",
+  "objectives": [
+    "Front line press as a unit and show the ball one way",
+    "Midfield step up to intercept the pass into the press trap",
+    "Transition quickly to goal within 5 seconds of a turnover"
+  ],
+  "key_messages": ["\"Show inside / show out\" - agree the side", "\"Trap!\" - the call to squeeze", "\"5 seconds\" - attack the turnover"],
+  "blocks": [
+    {
+      "phase": "Warm-up",
+      "title": "Rondo 5v2 with press triggers",
+      "minutes": 10,
+      "diagram": {
+        "area": {"type": "grid", "length": 15, "width": 15},
+        "caption": "Two grids running side by side. 5 attackers keep the ball, 2 defenders press in pairs.",
+        "elements": [
+          {"type": "player", "team": "A", "x": 0.8, "y": 7.5, "label": "1"},
+          {"type": "player", "team": "A", "x": 7.5, "y": 14.2, "label": "2"},
+          {"type": "player", "team": "A", "x": 14.2, "y": 10, "label": "3"},
+          {"type": "player", "team": "A", "x": 14.2, "y": 3.5, "label": "4"},
+          {"type": "player", "team": "A", "x": 6, "y": 0.8, "label": "5"},
+          {"type": "player", "team": "B", "x": 6, "y": 8, "label": ""},
+          {"type": "player", "team": "B", "x": 9, "y": 6, "label": ""},
+          {"type": "ball", "x": 1.6, "y": 7.5},
+          {"type": "arrow", "style": "pass", "points": [[1.4, 8.2], [7, 13.6]]},
+          {"type": "arrow", "style": "run", "points": [[6, 8.6], [7.3, 12.3]]},
+          {"type": "arrow", "style": "run", "points": [[9, 6.6], [12.3, 9.6]]}
+        ]
+      },
+      "setup": "15x15m grid per group of 7. 5 on the outside, 2 pressers in the middle. Change pressers every 60 seconds or on a win.",
+      "how": [
+        "Attackers one-touch or two-touch round the square.",
+        "First defender presses the ball carrier, second defender cuts the next pass.",
+        "Pressers win the ball = swap with the player who lost it."
+      ],
+      "link_to_theme": "Introduces the pressing pair: 1st presser shows, 2nd presser reads and intercepts.",
+      "coaching_points": [
+        "Press on the bent run, showing the ball carrier one way",
+        "2nd defender reads the hips of the passer",
+        "Low body position, stick on the ground on the open side"
+      ],
+      "progressions": ["One-touch for attackers", "Add a 3rd presser (5v3)"],
+      "regressions": ["Bigger grid (20x20)", "Allow three touches"],
+      "step": {"space": "Shrink to 12x12 to speed up decisions", "people": "Go 4v2 if numbers are odd"}
+    },
+    {
+      "phase": "Technical",
+      "title": "Pressing unit walkthrough: 3 forwards vs back 4",
+      "minutes": 15,
+      "diagram": {
+        "area": {"type": "half"},
+        "caption": "Back 4 (red) build out from a coach feed. Front 3 (blue) set the press and show the ball inside.",
+        "elements": [
+          {"type": "player", "team": "coach", "x": 42, "y": 50},
+          {"type": "player", "team": "B", "x": 36, "y": 8, "label": "LB"},
+          {"type": "player", "team": "B", "x": 40, "y": 21, "label": "CB"},
+          {"type": "player", "team": "B", "x": 40, "y": 34, "label": "CB"},
+          {"type": "player", "team": "B", "x": 36, "y": 47, "label": "RB"},
+          {"type": "player", "team": "A", "x": 28, "y": 14, "label": "RF"},
+          {"type": "player", "team": "A", "x": 29, "y": 27.5, "label": "CF"},
+          {"type": "player", "team": "A", "x": 28, "y": 41, "label": "LF"},
+          {"type": "ball", "x": 40, "y": 22.5},
+          {"type": "arrow", "style": "run", "points": [[29.5, 27.5], [37, 24]]},
+          {"type": "arrow", "style": "run", "points": [[28.5, 14], [32.5, 10]]},
+          {"type": "arrow", "style": "run", "points": [[28.5, 41], [34, 33]]},
+          {"type": "zone", "x": 18, "y": 0, "w": 10, "h": 16, "color": "yellow", "label": "TRAP"},
+          {"type": "cone", "x": 18, "y": 16, "color": "yellow"},
+          {"type": "cone", "x": 28, "y": 16, "color": "yellow"}
+        ]
+      },
+      "setup": "Half pitch. Back 4 + GK in red, front 3 in blue. Coach feeds into any red defender. Yellow-coned trap zone on the left side.",
+      "how": [
+        "Walk it through first at 50% pace, then 75%, then full.",
+        "On the feed, CF curves to show the ball towards the trap side.",
+        "Far-side forward tucks in to cut the switch; near forward closes the outlet.",
+        "Defenders try to play out past the forwards through the cone gates on the halfway line."
+      ],
+      "link_to_theme": "Builds the shape and trigger cues that the rest of the session relies on.",
+      "coaching_points": [
+        "Trigger = a slow pass, a poor touch, or a pass to the full-back",
+        "Curved approach so you cut off one side",
+        "Distances: forwards no more than 10-12m apart so no pass splits them",
+        "Talk: CF calls 'Trap!' when the ball goes into the zone"
+      ],
+      "questions": ["Where do we want the ball to go?", "What tells you it's time to press?"],
+      "progressions": ["Add a defensive mid for the reds to find", "Live: reds score by dribbling over halfway"],
+      "regressions": ["Reds play only 2-touch, slower tempo", "Remove the far CB"]
+    },
+    {
+      "phase": "Small-sided",
+      "title": "6v4 + GK: win it high, score in 5 seconds",
+      "minutes": 15,
+      "diagram": {
+        "area": {"type": "half"},
+        "caption": "Blue (6) press red (4 + GK) in their own half. Win it and score in the full goal within 5 seconds.",
+        "elements": [
+          {"type": "player", "team": "GK", "x": 44.5, "y": 27.5},
+          {"type": "player", "team": "B", "x": 38, "y": 12, "label": ""},
+          {"type": "player", "team": "B", "x": 39, "y": 26, "label": ""},
+          {"type": "player", "team": "B", "x": 38, "y": 42, "label": ""},
+          {"type": "player", "team": "B", "x": 29, "y": 28, "label": ""},
+          {"type": "player", "team": "A", "x": 32, "y": 15, "label": ""},
+          {"type": "player", "team": "A", "x": 33, "y": 30, "label": ""},
+          {"type": "player", "team": "A", "x": 31, "y": 43, "label": ""},
+          {"type": "player", "team": "A", "x": 24, "y": 22, "label": ""},
+          {"type": "player", "team": "A", "x": 24, "y": 36, "label": ""},
+          {"type": "player", "team": "A", "x": 16, "y": 27, "label": ""},
+          {"type": "goal", "x": 0.2, "y": 12, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.2, "y": 43, "size": "mini", "facing": "right"},
+          {"type": "ball", "x": 38.7, "y": 13},
+          {"type": "arrow", "style": "run", "points": [[32, 15.6], [37, 13.6]]},
+          {"type": "arrow", "style": "shot", "points": [[36, 20], [44, 26]]}
+        ]
+      },
+      "setup": "Half pitch. 4 red defenders + GK defend the full goal and attack 2 mini goals on the halfway line. 6 blue press. Rotate groups every 4 minutes.",
+      "how": [
+        "Every rep starts with the GK playing out to a red defender.",
+        "Blue win the ball: 5-second countdown to get a shot away.",
+        "Red get past the press: score in either mini goal."
+      ],
+      "link_to_theme": "Puts the pressing shape under live pressure and adds the transition reward.",
+      "coaching_points": [
+        "Press as a unit, not as individuals",
+        "Midfielders step up when the ball is trapped - don't sit off",
+        "On a turnover: first look is forward, play early"
+      ],
+      "progressions": ["Red get a free 'out' player on the halfway line", "Blue only get 3 seconds"],
+      "regressions": ["5v4 instead of 6v4", "Red must play out through the trap side"],
+      "activity_notes": "Run two waves: next group waits at the 23 on the cones and goes as soon as a rep ends. Rest time = one rep."
+    },
+    {
+      "phase": "Conditioned game",
+      "title": "8v8 + GKs: press-zone scoring",
+      "minutes": 15,
+      "diagram": {
+        "area": {"type": "full"},
+        "caption": "8v8 between the 23m lines plus Ds. A goal from a ball won in the attacking 23 counts double.",
+        "elements": [
+          {"type": "player", "team": "GK", "x": 1.5, "y": 27.5},
+          {"type": "player", "team": "GK", "x": 89.9, "y": 27.5},
+          {"type": "zone", "x": 0, "y": 0, "w": 22.9, "h": 55, "color": "red", "label": "RED x2 ZONE"},
+          {"type": "zone", "x": 68.5, "y": 0, "w": 22.9, "h": 55, "color": "blue", "label": "BLUE x2 ZONE"},
+          {"type": "player", "team": "A", "x": 60, "y": 15},
+          {"type": "player", "team": "A", "x": 62, "y": 35},
+          {"type": "player", "team": "A", "x": 50, "y": 25},
+          {"type": "player", "team": "A", "x": 40, "y": 45},
+          {"type": "player", "team": "A", "x": 25, "y": 12},
+          {"type": "player", "team": "A", "x": 22, "y": 30},
+          {"type": "player", "team": "B", "x": 30, "y": 20},
+          {"type": "player", "team": "B", "x": 35, "y": 38},
+          {"type": "player", "team": "B", "x": 45, "y": 10},
+          {"type": "player", "team": "B", "x": 66, "y": 26},
+          {"type": "player", "team": "B", "x": 72, "y": 44},
+          {"type": "player", "team": "B", "x": 15, "y": 40}
+        ]
+      },
+      "setup": "Full pitch, 8v8 plus GKs. Two spare players rotate in every 3 minutes.",
+      "how": [
+        "Normal hockey rules, no long aerials.",
+        "Ball won in your attacking 23 and scored = 2 goals.",
+        "Coach restarts quickly from the back with a feed to keep tempo high."
+      ],
+      "link_to_theme": "Rewards the exact behaviour we want: win it high and finish quickly.",
+      "coaching_points": [
+        "Recognise the triggers in a live game",
+        "Recover shape quickly if the press is broken",
+        "Communication - one voice calls the press"
+      ],
+      "progressions": ["Reds must play out from GK every restart"],
+      "regressions": ["Add a neutral floater who plays for the team in possession"]
+    },
+    {
+      "phase": "Game",
+      "title": "11v11 (or numbers available) - apply the press",
+      "minutes": 20,
+      "setup": "Full pitch match. Swap bibs at half-time. Coach stops play only to freeze a good or missed press trigger.",
+      "how": [
+        "Full game, normal rules.",
+        "Each team gets a 'press captain' who calls the trap.",
+        "Track turnovers won in the attacking half on a whiteboard."
+      ],
+      "coaching_points": [
+        "Look for the triggers we practised",
+        "Stay compact as a front 3",
+        "Celebrate the turnover, not only the goal"
+      ],
+      "questions": ["How many turnovers did we win high? What made them work?"]
+    }
+  ],
+  "safety": ["Shin guards and gum shields for all", "GKs fully kitted for blocks 3-5", "Check the pitch surface and goals before starting"]
+}
