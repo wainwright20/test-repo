@@ -27,7 +27,7 @@ The PDF builder (`scripts/build_session_pdf.py`) takes one JSON object. Every fi
 
 ```json
 {
-  "phase": "Warm-up | Technical | Small-sided | Conditioned game | Game",
+  "phase": "Warm-up | Technical | Small-sided | Live game scenario | Game",
   "title": "Name of the drill",
   "minutes": 10,
   "diagram": { ... see below ... },
@@ -43,7 +43,7 @@ The PDF builder (`scripts/build_session_pdf.py`) takes one JSON object. Every fi
 }
 ```
 
-The `phase` word decides the colour of the block header: warm-up = orange, technical = blue, small-sided = purple, conditioned/live = red, game = green. Keep to these phase names.
+The `phase` word decides the colour of the block header: warm-up = orange, technical = blue, small-sided = purple, live game scenario = red, game = green. Use these five phase names, which match the coach's structure in SKILL.md.
 
 ## Diagram
 
@@ -72,12 +72,12 @@ Grid size guide: 10x10 (tight 1v1 / rondo for 4-5), 15x15 (rondo 5v2), 20x20 (4v
 
 | type | Fields | Notes |
 |---|---|---|
-| `player` | `x`, `y`, `team`, `label` | `team`: `A` (blue), `B` (red), `C` (yellow), `GK`, `neutral` (orange floater), `coach` (black square). `label` up to 3 chars, e.g. "1", "CF", "LB". Use `""` for no label. |
+| `player` | `x`, `y`, `team`, `label` | `team`: `A` (blue), `B` (red), `C` (yellow), `GK`, `neutral` (orange floater), `coach` (black square; use label "H" for a helper). `label` up to 3 chars, e.g. "1", "CF", "LB". Use `""` for no label. |
 | `cone` | `x`, `y`, `color` | `orange`, `yellow`, `red`, `blue`, `white` |
 | `ball` | `x`, `y` | Put it just beside the player who has it (~0.8m away) |
 | `goal` | `x`, `y`, `size`, `facing`, `width` | `size`: `mini` (default 2m wide) or `full`. `facing` = which way the mouth opens: `left`, `right`, `up`, `down`. Full goals on `half`/`full`/`23` areas are drawn for you, so only add mini goals. |
 | `arrow` | `style`, `points` | `style`: `pass` (solid white), `run` (dashed yellow = movement without the ball), `dribble` (wavy blue = carrying the ball), `shot` (red). `points` = `[[x,y],[x,y],...]`; two or more points; the arrowhead is drawn at the last point. Start arrows just off the player's dot so they don't cover the number. |
-| `zone` | `x`, `y`, `w`, `h`, `color`, `label` | Shaded rectangle from bottom-left (`x`,`y`). `color`: `blue`, `red`, `yellow`, `white`. Use it for channels, scoring zones, "trap" areas. |
+| `zone` | `x`, `y`, `w`, `h`, `color`, `label` | Shaded rectangle from bottom-left (`x`,`y`). `color`: `blue`, `red`, `yellow`, `white`. Use it for channels, scoring zones, "trap" areas. Keep `label` to 1-2 short words; it shrinks to fit narrow zones. |
 | `text` | `x`, `y`, `text` | Small label, e.g. "Gate", "Start", "x2". Keep it to a word or two. |
 
 ### Tips for clear diagrams

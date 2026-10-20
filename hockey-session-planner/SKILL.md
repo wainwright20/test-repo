@@ -23,6 +23,8 @@ Next, read the profile for that team, which holds defaults and what works for th
 - Ladies' 1st team → `references/team_ladies.md`
 - Minis U5-U10 → `references/team_minis.md`
 
+**Which file wins:** SKILL.md sets the *structure* (five blocks, their timings and purposes). The team profile sets *how* each block is coached: language, complexity, formats and defaults. When the two clash (e.g. "semi-opposed overloads" vs "tiny fun games for U6s"), follow the team profile.
+
 **If the team isn't clear, ask one short question** ("Which team is this for: men's, ladies or minis?") before building anything, because the team changes everything. For any other gap, use the team-profile default and list your assumptions in one line when you hand over the PDF. Don't interrogate the coach. They want a plan, not a form to fill in.
 
 ## Step 2 - Design the session using the coach's structure

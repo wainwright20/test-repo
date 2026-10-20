@@ -230,9 +230,13 @@ class Diagram(Flowable):
         c.rect(x, y, w, h, stroke=1, fill=1)
         c.setDash()
         if el.get("label"):
+            # shrink the label to fit narrow zones
+            size = 6.5
+            while size > 4 and c.stringWidth(el["label"], "Helvetica-Bold", size) > w - 2:
+                size -= 0.5
             c.setFillColor(colors.white)
-            c.setFont("Helvetica-Bold", 6.5)
-            c.drawCentredString(x + w / 2, y + h - 8, el["label"])
+            c.setFont("Helvetica-Bold", size)
+            c.drawCentredString(x + w / 2, y + h - size - 2, el["label"])
 
     def _cone(self, c, el):
         x, y = self.P(el["x"], el["y"])
@@ -364,10 +368,13 @@ class Legend(Flowable):
         ("dribble", None, "Dribble / carry"), ("shot", None, "Shot"),
     ]
 
-    def __init__(self, width):
+    def __init__(self, width, used=None):
         super().__init__()
         self.width = width
-        self.height = 13 * mm
+        # only show symbols that appear in this plan's diagrams
+        self.items = [it for it in self.ITEMS if used is None or (it[1] or it[0]) in used] or self.ITEMS
+        self.rows = (len(self.items) + 5) // 6
+        self.height = (self.rows * 6 + 1) * mm
 
     def draw(self):
         c = self.canv
@@ -375,7 +382,7 @@ class Legend(Flowable):
         c.roundRect(0, 0, self.width, self.height, 2 * mm, stroke=0, fill=1)
         per_row = 6
         col_w = self.width / per_row
-        for i, (kind, team, label) in enumerate(self.ITEMS):
+        for i, (kind, team, label) in enumerate(self.items):
             row, col = divmod(i, per_row)
             x = col * col_w + 6 * mm
             y = self.height - (row + 1) * 6 * mm + 1.6 * mm
@@ -537,7 +544,19 @@ def build(plan, out_path):
     ov.setStyle(TableStyle(ov_style))
     two = Table([[obj, [Paragraph("SESSION OVERVIEW", H_LABEL), ov]]], colWidths=[W - 80 * mm, 80 * mm])
     two.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0)]))
-    story += [two, Spacer(1, 4 * mm), Paragraph("DIAGRAM KEY", H_LABEL), Legend(W), Spacer(1, 5 * mm)]
+    used = set()
+    for b in blocks:
+        for el in (b.get("diagram") or {}).get("elements", []):
+            t_ = el.get("type")
+            if t_ == "player":
+                used.add(el.get("team", "A"))
+            elif t_ == "arrow":
+                used.add(el.get("style", "pass"))
+            elif t_ in ("cone", "ball"):
+                used.add(t_)
+        if (b.get("diagram") or {}).get("area", {}).get("type", "grid") == "grid":
+            used.add("cone")
+    story += [two, Spacer(1, 4 * mm), Paragraph("DIAGRAM KEY", H_LABEL), Legend(W, used), Spacer(1, 5 * mm)]
 
     # --- each block
     t = 0
