@@ -2,16 +2,16 @@
   "team": "Men's 1st XI",
   "coach": "Head Coach",
   "date": "Positional Play Block - Week 2 of 4",
-  "venue": "Half pitch (full pitch for blocks 4 and 5)",
+  "venue": "Half pitch",
   "duration": 90,
-  "players": "16 outfield + 2 GK",
-  "equipment": ["Balls x20", "Cones (4 colours) to mark the 5 lanes", "Bibs x3 sets", "Mini goals x4"],
+  "players": "8-10 (numbers below are for 8; '+1/+2' says what to add)",
+  "equipment": ["Balls x15", "Cones (4 colours) to mark the lanes", "Bibs x2 sets", "Mini goals x4"],
   "theme": "The rotation chain: FB in, 8 out, winger in",
   "focus": "In possession: when the 8 goes wide, the winger goes inside to keep two per lane, trap their full-back and set up the reverse pass and the ladder",
   "objectives": [
     "Complete the 3-player chain (FB in, 8 out, W in) with the right timing",
-    "Read the opposition reaction: if their CM follows the 8, play the diagonal into the W; if their FB jumps to the 8, play the reverse pass behind for the W against their CB",
-    "Use the ladder (8 to 9, 9 sets first time, W runs in behind) to enter the circle"
+    "Read the opposition: if their CM follows the 8, play the diagonal into the W; if their FB jumps to the 8, play the reverse pass behind for the W against their CB",
+    "Use the ladder (8 to 9, 9 sets first time, W runs in behind) to get in behind"
   ],
   "key_messages": [
     "\"8 out, W in\" - the winger's trigger is the 8 leaving the half-space",
@@ -26,7 +26,7 @@
       "minutes": 10,
       "diagram": {
         "area": {"type": "grid", "length": 30, "width": 20},
-        "caption": "x3 groups. 8 plays into 9, 9 sets back first time, W runs in behind and receives the through ball. Everyone rotates one position.",
+        "caption": "x2 groups of 4 (or 5). 8 plays into 9, 9 sets back first time, W runs in behind for the through ball. Everyone rotates one position.",
         "elements": [
           {"type": "cone", "x": 3, "y": 10, "color": "yellow"},
           {"type": "cone", "x": 16, "y": 10, "color": "orange"},
@@ -43,15 +43,15 @@
           {"type": "arrow", "style": "pass", "points": [[8.5, 11.5], [24, 14]]}
         ]
       },
-      "setup": "Three 30x20m areas, 5-6 per group. Start cones for the 8 (yellow), 9 (orange), W (blue), finish cone (red). A second ball starts as soon as the W is away.",
+      "setup": "Two 30x20m areas side by side. 8 players: 2 groups of 4 (8, 9, W + 1 waiting at the 8 cone). 9-10: groups of 4 and 5. Start cones for the 8 (yellow), 9 (orange), W (blue), finish cone (red).",
       "how": [
-        "8 plays into the 9's feet; the 8 follows the pass to support underneath.",
+        "8 plays into the 9's feet and follows the pass to support underneath.",
         "9 sets first time back to the 8 (round the corner).",
-        "W times the run off the 9's set and receives the through ball from the 8, then dribbles over the red cone.",
-        "Rotation: 8 to 9, 9 to W, W back to the 8 queue.",
-        "After 5 minutes: add a passive defender on the 9."
+        "W times the run off the 9's set and receives the through ball, then dribbles over the red cone.",
+        "Rotation: 8 to 9, 9 to W, W back to the 8 cone. Next ball goes as soon as the W is away.",
+        "After 5 minutes: the waiting player becomes a passive defender on the 9."
       ],
-      "link_to_theme": "Grooves the ladder combination from the video and the habit of rotating into a new position.",
+      "link_to_theme": "Grooves the ladder combination and the habit of rotating into a new position.",
       "coaching_points": [
         "9 sets with an angled stick so the ball arrives on the 8's open side",
         "W starts the run as the 9 sets, not when the 8 receives",
@@ -59,42 +59,45 @@
       ],
       "progressions": ["9 can choose to set or turn (passive defender decides it)", "One-touch through ball"],
       "regressions": ["Shorter distances (20x15)", "Unlimited touches for the 8"],
-      "activity_notes": "Second ball goes as soon as the W leaves, so each player works every 20-30 seconds."
+      "activity_notes": "Groups of 4-5 with a new ball every 15 seconds: each player works every 15-20 seconds."
     },
     {
       "phase": "Technical",
       "title": "The 3-player chain: read who follows",
       "minutes": 20,
       "diagram": {
-        "area": {"type": "half"},
-        "caption": "x2 (one unit on each half). LB has the ball inside, 8 goes wide, W comes inside. Their CM, FB and CB must choose who to follow.",
+        "area": {"type": "grid", "length": 45, "width": 33},
+        "caption": "LB has the ball inside, 8 goes wide, W comes inside. Their CM, FB and CB must choose who to follow. Score through the end gates.",
         "elements": [
-          {"type": "zone", "x": 0, "y": 44, "w": 45.7, "h": 11, "color": "white", "label": ""},
-          {"type": "zone", "x": 0, "y": 33, "w": 45.7, "h": 11, "color": "yellow", "label": ""},
-          {"type": "player", "team": "GK", "x": 44.5, "y": 27.5},
-          {"type": "player", "team": "A", "x": 4, "y": 38, "label": "LB"},
-          {"type": "player", "team": "A", "x": 12, "y": 40, "label": "8"},
-          {"type": "player", "team": "A", "x": 24, "y": 51, "label": "LW"},
-          {"type": "player", "team": "A", "x": 22, "y": 26, "label": "9"},
-          {"type": "player", "team": "B", "x": 14, "y": 34, "label": "CM"},
-          {"type": "player", "team": "B", "x": 22, "y": 46, "label": "FB"},
-          {"type": "player", "team": "B", "x": 32, "y": 34, "label": "CB"},
-          {"type": "player", "team": "B", "x": 33, "y": 22, "label": "CB"},
-          {"type": "ball", "x": 4.8, "y": 37.2},
-          {"type": "arrow", "style": "run", "points": [[13, 41.5], [15, 50]]},
-          {"type": "arrow", "style": "run", "points": [[24.5, 49.5], [26, 39]]},
-          {"type": "arrow", "style": "pass", "points": [[5.5, 38.5], [14.5, 49.5]]}
+          {"type": "zone", "x": 0, "y": 22, "w": 45, "h": 11, "color": "white", "label": ""},
+          {"type": "zone", "x": 0, "y": 11, "w": 45, "h": 11, "color": "yellow", "label": ""},
+          {"type": "cone", "x": 44.5, "y": 8, "color": "red"},
+          {"type": "cone", "x": 44.5, "y": 14, "color": "red"},
+          {"type": "cone", "x": 44.5, "y": 20, "color": "blue"},
+          {"type": "cone", "x": 44.5, "y": 26, "color": "blue"},
+          {"type": "player", "team": "A", "x": 3, "y": 8, "label": "LCB"},
+          {"type": "player", "team": "A", "x": 9, "y": 16, "label": "LB"},
+          {"type": "player", "team": "A", "x": 16, "y": 18, "label": "8"},
+          {"type": "player", "team": "A", "x": 27, "y": 30, "label": "LW"},
+          {"type": "player", "team": "A", "x": 30, "y": 6, "label": "9"},
+          {"type": "player", "team": "B", "x": 19, "y": 12, "label": "CM"},
+          {"type": "player", "team": "B", "x": 27, "y": 24, "label": "FB"},
+          {"type": "player", "team": "B", "x": 37, "y": 14, "label": "CB"},
+          {"type": "ball", "x": 9.8, "y": 15.2},
+          {"type": "arrow", "style": "run", "points": [[17, 19.5], [19, 28]]},
+          {"type": "arrow", "style": "run", "points": [[28.5, 29], [31, 19]]},
+          {"type": "arrow", "style": "pass", "points": [[10.5, 16.5], [18.5, 27.5]]}
         ]
       },
-      "setup": "Half pitch, two units at once (one on each half of the full pitch). Per unit: LB, 8, LW, 9 (blue) vs their CM, FB, 2 CBs (red) + GK. Coach feeds the LB, who starts inside in the half-space (the Week 1 position).",
+      "setup": "45x33m, 3 lanes. 8 players: blue LCB, LB, 8, LW, 9 v red CM, FB, CB. Two gates on the end line: centre gate (red cones) and half-space gate (blue cones). 9: add a red second CB. 10: add a red W who presses the LCB and a blue 6.",
       "how": [
-        "LB receives inside. As the ball travels, the 8 drifts wide and the LW comes inside into the half-space.",
+        "LCB plays into the LB, who starts inside in the half-space (the Week 1 position). As the ball travels, the 8 drifts wide and the LW comes inside.",
         "Read 1 - their CM follows the 8: LB plays the diagonal into the LW coming inside.",
         "Read 2 - their CM stays: LB plays out to the 8 wide. If their FB jumps to the 8, the 8 plays the reverse pass in behind for the LW against their CB.",
-        "Read 3 - the 8 receives and nothing is on behind: ladder - 8 into 9, 9 sets, LW runs in behind.",
-        "First 6 minutes the coach tells the red players what to do; then red go live at 75% and blue have to read it."
+        "Read 3 - nothing on behind: ladder - 8 into 9, 9 sets, LW runs in behind.",
+        "Blue score by dribbling through either gate. First 6 minutes coach tells red what to do; then red go live at 75%. Swap 3 blue into red every 4 minutes."
       ],
-      "link_to_theme": "Builds the whole chain from the video and the decisions it forces on the opposition.",
+      "link_to_theme": "Builds the whole chain from the video and the decisions it forces on the opposition, with the exact players who make it happen.",
       "coaching_points": [
         "Timing: the W only goes inside once the 8 has started going wide - too early and their FB just passes him on",
         "LW comes inside on the blind side of their FB, then shows on the open stick side for the diagonal",
@@ -102,123 +105,119 @@
         "Reverse pass is weighted into the space between their FB and CB, not to the W's stick"
       ],
       "questions": ["Their FB jumped to our 8: where is the space now?", "Their CM followed our 8 out: who is free?"],
-      "progressions": ["Add their winger to press the LB (blue must play quicker)", "Blue must finish in 8 seconds"],
+      "progressions": ["Blue must score within 8 seconds", "Red CM and FB fully live from the start"],
       "regressions": ["Red CB stays passive", "Coach calls the read (1, 2 or 3) as the ball goes in"],
-      "activity_notes": "Two units of 8 on separate halves. Swap blue and red roles every 4 reps; switch to the right-hand side halfway through."
+      "activity_notes": "All 8-10 involved each rep; reps reset every 15-20 seconds from the LCB."
     },
     {
       "phase": "Small-sided",
-      "title": "6v5 + GK: rotation to goal",
+      "title": "5v3 to goal: rotation and counter",
       "minutes": 20,
       "diagram": {
-        "area": {"type": "half"},
-        "caption": "Blue 6 attack the full goal from a CB feed. Red 5 + GK defend and counter into 2 mini goals. Goal from the reverse pass or ladder = 2.",
+        "area": {"type": "grid", "length": 45, "width": 33},
+        "caption": "Blue 5 attack 2 mini goals on the end line. Red 3 defend and counter into 2 mini goals behind the LCB. Goal from the reverse pass or ladder = 2.",
         "elements": [
-          {"type": "player", "team": "GK", "x": 44.5, "y": 27.5},
-          {"type": "goal", "x": 0.3, "y": 12, "size": "mini", "facing": "right"},
-          {"type": "goal", "x": 0.3, "y": 43, "size": "mini", "facing": "right"},
-          {"type": "player", "team": "A", "x": 4, "y": 30, "label": "CB"},
-          {"type": "player", "team": "A", "x": 10, "y": 39, "label": "LB"},
-          {"type": "player", "team": "A", "x": 13, "y": 23, "label": "6"},
-          {"type": "player", "team": "A", "x": 20, "y": 49, "label": "8"},
-          {"type": "player", "team": "A", "x": 25, "y": 39, "label": "LW"},
-          {"type": "player", "team": "A", "x": 27, "y": 22, "label": "9"},
-          {"type": "player", "team": "B", "x": 16, "y": 33, "label": "CM"},
-          {"type": "player", "team": "B", "x": 24, "y": 46, "label": "FB"},
-          {"type": "player", "team": "B", "x": 34, "y": 36, "label": "CB"},
-          {"type": "player", "team": "B", "x": 34, "y": 22, "label": "CB"},
-          {"type": "player", "team": "B", "x": 14, "y": 14, "label": "W"},
-          {"type": "ball", "x": 20.8, "y": 48.2},
-          {"type": "arrow", "style": "run", "points": [[24, 47], [21.5, 49]]},
-          {"type": "arrow", "style": "pass", "points": [[21.5, 48.5], [33, 43]]},
-          {"type": "arrow", "style": "run", "points": [[26.3, 40], [33, 42]]}
+          {"type": "zone", "x": 0, "y": 22, "w": 45, "h": 11, "color": "white", "label": ""},
+          {"type": "goal", "x": 44.7, "y": 10, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 44.7, "y": 22, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 0.3, "y": 6, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.3, "y": 27, "size": "mini", "facing": "right"},
+          {"type": "player", "team": "A", "x": 4, "y": 14, "label": "LCB"},
+          {"type": "player", "team": "A", "x": 11, "y": 18, "label": "LB"},
+          {"type": "player", "team": "A", "x": 18, "y": 29, "label": "8"},
+          {"type": "player", "team": "A", "x": 26, "y": 19, "label": "LW"},
+          {"type": "player", "team": "A", "x": 31, "y": 6, "label": "9"},
+          {"type": "player", "team": "B", "x": 16, "y": 13, "label": "CM"},
+          {"type": "player", "team": "B", "x": 24, "y": 26, "label": "FB"},
+          {"type": "player", "team": "B", "x": 36, "y": 14, "label": "CB"},
+          {"type": "ball", "x": 18.8, "y": 28.2},
+          {"type": "arrow", "style": "run", "points": [[23, 26.5], [20, 28]]},
+          {"type": "arrow", "style": "pass", "points": [[19.5, 28], [33, 21]]},
+          {"type": "arrow", "style": "run", "points": [[27.3, 20], [33, 20.5]]}
         ]
       },
-      "setup": "Half pitch. Blue 6 (CB, LB, 6, 8, LW, 9) vs red 5 (CM, W, FB, 2 CBs) + GK. Two mini goals on the halfway line for red. 5 spare players work as a second group and swap in every 4 minutes.",
+      "setup": "45x33m, 3 lanes. 2 mini goals on the end line for blue, 2 behind the start line for red. 8 players: blue 5 (LCB, LB, 8, LW, 9) v red 3 (CM, FB, CB). 9: red +1 CB (5v4). 10: blue +1 (a 6), red +1 W (6v5). Swap roles every 4 minutes.",
       "how": [
-        "Every rep starts with a coach feed into the blue CB on the halfway line.",
-        "Blue score in the full goal: 1 goal, or 2 if the goal comes from the reverse pass or the ladder.",
-        "Red win it: score in either mini goal within 6 seconds.",
-        "Play both sides: first 10 minutes build down the left, last 10 down the right."
+        "Every rep starts with a coach feed into the LCB.",
+        "Blue score in either end mini goal: 1 goal, or 2 if it came from the reverse pass or the ladder.",
+        "Red win it: score in either mini goal behind the LCB within 6 seconds.",
+        "First 10 minutes build down the left, then flip the cones and build down the right."
       ],
       "link_to_theme": "The chain against live opposition who are trying to stop it, with a reward for the two key finishes.",
       "coaching_points": [
         "Make them decide: hold the wide and half-space positions long enough that their FB has to choose",
         "Ball speed after the rotation - the advantage lasts about 2 seconds",
-        "9 stays high to pin both CBs until the ladder is on, then drops to set",
-        "Rest-defence: CB and 6 stay connected to stop the counter"
+        "9 stays high to pin their CB until the ladder is on, then drops to set",
+        "Rest-defence: the LCB stays connected to stop the counter"
       ],
-      "progressions": ["Add a second red CM (6v6)", "Blue max 3 touches each"],
-      "regressions": ["Red W removed (6v4)", "Red FB must stay in the wide lane"],
-      "activity_notes": "Second group of 5 runs a 3v2 rondo in a 15x15 grid behind the halfway line while waiting, then swaps in every 4 minutes.",
+      "progressions": ["Red +1 at any number", "Blue max 3 touches each"],
+      "regressions": ["Red FB must stay in the wide lane", "Red counter only by dribbling, not passing"],
+      "activity_notes": "Everyone plays; coach has 10 balls at the start line so the next rep starts as soon as one ends.",
       "step": {"task": "Count rotations completed as well as goals", "people": "Fittest group plays red so blue face proper pressure"}
     },
     {
       "phase": "Live game scenario",
-      "title": "8v8 + GKs: who follows? game",
+      "title": "4v4 (+ floaters): who follows? game",
       "minutes": 20,
       "diagram": {
-        "area": {"type": "full"},
-        "caption": "8v8 + GKs. Every restart builds from the GK. Goal from a W who started wide and finished inside, or from the ladder = 2.",
+        "area": {"type": "grid", "length": 50, "width": 40},
+        "caption": "4v4 + floater 9. 2 mini goals each end. Goal from the diagonal into an inside W, the reverse pass or the ladder = 2.",
         "elements": [
-          {"type": "player", "team": "GK", "x": 1.5, "y": 27.5},
-          {"type": "player", "team": "GK", "x": 89.9, "y": 27.5},
-          {"type": "player", "team": "A", "x": 16, "y": 35, "label": "CB"},
-          {"type": "player", "team": "A", "x": 16, "y": 20, "label": "CB"},
-          {"type": "player", "team": "A", "x": 30, "y": 39, "label": "LB"},
-          {"type": "player", "team": "A", "x": 28, "y": 26, "label": "6"},
-          {"type": "player", "team": "A", "x": 40, "y": 51, "label": "8"},
-          {"type": "player", "team": "A", "x": 54, "y": 40, "label": "LW"},
-          {"type": "player", "team": "A", "x": 60, "y": 25, "label": "9"},
-          {"type": "player", "team": "A", "x": 50, "y": 8, "label": "RW"},
-          {"type": "player", "team": "B", "x": 36, "y": 33, "label": ""},
-          {"type": "player", "team": "B", "x": 48, "y": 46, "label": ""},
-          {"type": "player", "team": "B", "x": 64, "y": 36, "label": ""},
-          {"type": "player", "team": "B", "x": 64, "y": 20, "label": ""},
-          {"type": "player", "team": "B", "x": 58, "y": 11, "label": ""},
-          {"type": "player", "team": "B", "x": 42, "y": 20, "label": ""},
-          {"type": "player", "team": "B", "x": 26, "y": 14, "label": ""},
-          {"type": "player", "team": "B", "x": 26, "y": 42, "label": ""},
-          {"type": "ball", "x": 40.8, "y": 50.2},
-          {"type": "arrow", "style": "pass", "points": [[41.5, 50], [62, 44]]},
-          {"type": "arrow", "style": "run", "points": [[55.5, 41], [62, 43]]}
+          {"type": "zone", "x": 0, "y": 27, "w": 50, "h": 13, "color": "white", "label": ""},
+          {"type": "zone", "x": 0, "y": 0, "w": 50, "h": 13, "color": "white", "label": ""},
+          {"type": "goal", "x": 0.3, "y": 7, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.3, "y": 33, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 49.7, "y": 7, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 49.7, "y": 33, "size": "mini", "facing": "left"},
+          {"type": "player", "team": "A", "x": 6, "y": 20, "label": "CB"},
+          {"type": "player", "team": "A", "x": 14, "y": 25, "label": "FB"},
+          {"type": "player", "team": "A", "x": 20, "y": 36, "label": "8"},
+          {"type": "player", "team": "A", "x": 33, "y": 27, "label": "W"},
+          {"type": "player", "team": "neutral", "x": 36, "y": 16, "label": "9"},
+          {"type": "player", "team": "B", "x": 17, "y": 17, "label": ""},
+          {"type": "player", "team": "B", "x": 28, "y": 33, "label": ""},
+          {"type": "player", "team": "B", "x": 40, "y": 24, "label": ""},
+          {"type": "player", "team": "B", "x": 42, "y": 10, "label": ""},
+          {"type": "ball", "x": 20.8, "y": 35.2},
+          {"type": "arrow", "style": "pass", "points": [[21.5, 35], [37, 31]]},
+          {"type": "arrow", "style": "run", "points": [[34.5, 28], [38, 30.5]]}
         ]
       },
-      "setup": "Full pitch, 8v8 + GKs. Each team: 2 CBs, LB, 6, 8, LW, 9, RW. Any spares rotate in every 4 minutes.",
+      "setup": "50x40m, 3 lanes, 2 mini goals at each end. 8 players: 4v4 (CB, FB, 8, W each). 9: 1 neutral floater who plays as the 9 for the team in possession. 10: 5v5 with a 9 each.",
       "how": [
-        "Restarts are always a GK pass to a CB.",
-        "Goal from the reverse pass / diagonal into the inside W, or from the ladder = 2 goals.",
+        "Restarts are always from the team's CB on their own goal line.",
+        "Goal from the diagonal into an inside W, the reverse pass or the ladder = 2.",
         "Coach freeze once every 4 minutes on a good or missed rotation (30 seconds max).",
-        "Last 5 minutes: free play, no bonus - see if it sticks."
+        "Play 4 x 4-minute games with 1 minute rest. Last game: no bonus, see if it sticks."
       ],
       "link_to_theme": "Puts the chain into a full-intensity game with transitions, so timing and recognition are tested under fatigue.",
       "coaching_points": [
         "Recognise the picture in the game - it won't look as tidy as the drill",
         "If the chain breaks, re-form two per lane before forcing it",
-        "Opposite 8 and RW push up to make it 4 v their back 3/4 when the reverse pass goes"
+        "Whoever isn't in the chain pushes up to make it a 2v1 or 3v2 when the reverse pass goes"
       ],
-      "progressions": ["Bonus only if the rotation happens on the right-hand side (weaker side)"],
-      "regressions": ["Neutral floater plays for the team in possession"],
-      "activity_notes": "Everyone plays; ball-stocks behind both goals for instant restarts."
+      "progressions": ["Bonus only if the rotation happens on the weaker side"],
+      "regressions": ["Floater plays even at 8 (rotate the role every game)"],
+      "activity_notes": "Everyone plays; ball-stocks behind both ends for instant restarts."
     },
     {
       "phase": "Game",
-      "title": "11v11 (or numbers available): run the chain",
+      "title": "4v4 / 5v5 on the half pitch: run the chain",
       "minutes": 20,
-      "setup": "Full pitch match, normal rules. Swap bibs at 10 minutes.",
+      "setup": "Half pitch, full goal at one end (GK if one trains, otherwise 2 mini goals), 2 mini goals on halfway. 4v4, 4v4+1 or 5v5. Swap ends at 10 minutes.",
       "how": [
         "Normal game.",
         "Focus: when the 8 goes wide, the winger goes inside - every time.",
-        "Coach tallies completed rotation chains and circle entries that came from them."
+        "Coach tallies completed rotation chains and entries in behind that came from them."
       ],
       "coaching_points": [
         "Timing of the winger's inside run",
         "The reverse pass in behind their FB",
-        "Week 1 still applies - two in every lane"
+        "Week 1 still applies - two in every lane on the ball side"
       ],
       "questions": ["Who did their full-back follow? What did that open up?"]
     }
   ],
-  "safety": ["Shin guards and gum shields for all", "GKs fully kitted for blocks 2-5", "Reverse passes are on the floor - no raised balls into the circle in blocks 2-3"],
+  "safety": ["Shin guards and gum shields for all", "Reverse passes on the floor - no raised balls in blocks 1-4", "If a GK trains, they must be fully kitted before going in goal"],
   "reflection_prompts": ["Was the winger's timing right, or did they go inside too early?", "Which read (follow / stay / jump) did players spot most easily?", "Which players need the chain walked through again before Week 3?"]
 }

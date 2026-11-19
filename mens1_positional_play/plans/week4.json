@@ -2,24 +2,19 @@
   "team": "Men's 1st XI",
   "coach": "Head Coach",
   "date": "Positional Play Block - Week 4 of 4",
-  "venue": "Full pitch width, half pitch length (full pitch for blocks 4 and 5)",
+  "venue": "Half pitch",
   "duration": 90,
-  "players": "16 outfield + 2 GK",
-  "equipment": [
-    "Balls x20",
-    "Cones (4 colours)",
-    "Bibs x3 sets",
-    "Mini goals x4"
-  ],
-  "theme": "Breaking a mid-block: 5v4 on the last line and the switch",
-  "focus": "In possession against a 4-4-2 mid-block: FB high, W inside, 8 drops on an angle to make 5 on their back 4; the 6 switches play with one open-body action; central 3v2 on their CBs",
+  "players": "8-10 (numbers below are for 8; '+1/+2' says what to add)",
+  "equipment": ["Balls x15", "Cones (4 colours)", "Bibs x2 sets", "Mini goals x4"],
+  "theme": "Breaking a mid-block: overload the last line and switch",
+  "focus": "In possession against a mid-block: drop the 8 on an angle, switch through the 6 in one action to find the far-side 2v1, and create a central 3v2 on their CBs",
   "objectives": [
-    "Set up 5 attackers on their last line (FB, W, 9, far W, far 8) and two per lane behind",
+    "Get one more attacker than they have defenders on their last line (5v4 in the full team, 3v2 or 4v3 in today's units)",
     "6 receives on the open side and switches in one action (back foot to front foot) to find the 2v1 on the far side",
     "8, 9 and W create a central 3v2 on their 2 CBs and play the pass through the lines"
   ],
   "key_messages": [
-    "\"Five on four\" - five on their back line",
+    "\"Plus one\" - one more on their back line than they have",
     "\"Open up, switch\" - receive on the back foot, play off the front foot",
     "\"Make them shuffle\" - move the ball until the far side opens",
     "\"Three on two\" - 8, 9 and W against their centre-backs"
@@ -30,761 +25,191 @@
       "title": "Switch rondo: two boxes and a 6",
       "minutes": 10,
       "diagram": {
-        "area": {
-          "type": "grid",
-          "length": 40,
-          "width": 15
-        },
-        "caption": "x2. 4v2 in one end box; after 5 passes, play into the 6 in the middle, who switches to the far box in one action. 2 pressers follow.",
+        "area": {"type": "grid", "length": 40, "width": 15},
+        "caption": "3v1 in one end box; after 4 passes, play into the 6, who switches to the far box in one action. The presser sprints across.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 14,
-            "y": 0,
-            "w": 12,
-            "h": 15,
-            "color": "yellow",
-            "label": "6 ZONE"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 1,
-            "y": 7.5,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 7,
-            "y": 14,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 13,
-            "y": 7.5,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 7,
-            "y": 1,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 5.5,
-            "y": 9,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 8.5,
-            "y": 5.5,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "neutral",
-            "x": 20,
-            "y": 7.5,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 33,
-            "y": 14,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 39,
-            "y": 7.5,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 33,
-            "y": 1,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 27.5,
-            "y": 7.5,
-            "label": ""
-          },
-          {
-            "type": "ball",
-            "x": 13.8,
-            "y": 6.7
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                13.8,
-                8
-              ],
-              [
-                19,
-                8
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                21,
-                7
-              ],
-              [
-                32.3,
-                13.3
-              ]
-            ]
-          }
+          {"type": "zone", "x": 14, "y": 0, "w": 12, "h": 15, "color": "yellow", "label": "6 ZONE"},
+          {"type": "player", "team": "A", "x": 1, "y": 7.5, "label": ""},
+          {"type": "player", "team": "A", "x": 7, "y": 14, "label": ""},
+          {"type": "player", "team": "A", "x": 13, "y": 7.5, "label": ""},
+          {"type": "player", "team": "B", "x": 7, "y": 7, "label": ""},
+          {"type": "player", "team": "neutral", "x": 20, "y": 7.5, "label": "6"},
+          {"type": "player", "team": "A", "x": 33, "y": 14, "label": ""},
+          {"type": "player", "team": "A", "x": 39, "y": 7.5, "label": ""},
+          {"type": "player", "team": "A", "x": 33, "y": 1, "label": ""},
+          {"type": "ball", "x": 13.8, "y": 6.7},
+          {"type": "arrow", "style": "pass", "points": [[13.8, 8], [19, 8]]},
+          {"type": "arrow", "style": "pass", "points": [[21, 7], [32.3, 13.3]]},
+          {"type": "arrow", "style": "run", "points": [[7.5, 5.5], [16, 3], [30, 4]]}
         ]
       },
-      "setup": "Two 40x15m areas, each split into 3 boxes (14m / 12m / 14m). 8 per area: 3 or 4 in each end box, a 6 in the middle box, 2 pressers. With 3 in an end box it's a 3v2 - make that box the one the switch goes into.",
+      "setup": "One 40x15m area split into 3 boxes (14m / 12m / 14m). 8 players: 3 in each end box, a 6 in the middle, 1 presser. 9: add a second presser (3v2). 10: add a second 6.",
       "how": [
-        "4v2 in the start box: after 5 passes, play into the 6.",
+        "3v1 (or 3v2) in the start box: after 4 passes, play into the 6.",
         "6 receives on the open side and switches to the far box in one action (receive left, play right).",
-        "The 2 pressers sprint across to the far box; repeat.",
-        "Pressers win it: swap with the pair who lost it."
+        "Presser sprints across to the far box; repeat.",
+        "Presser wins it: swaps with the player who lost it. Change the 6 every 2 minutes."
       ],
       "link_to_theme": "Warms up the 6's back-foot-to-front-foot switch and the idea that the far side opens when they shuffle.",
       "coaching_points": [
         "6 opens their body before receiving - shoulders already facing the far box",
         "First touch sets the ball onto the stick for the switch, not a stop then a turn",
-        "End-box players make the angle for the 6 so the pass to them isn't straight through a presser"
+        "End-box players make the angle for the 6 so the pass to them isn't straight through the presser"
       ],
-      "progressions": [
-        "6 must play first time",
-        "Add a third presser who can enter the 6 zone"
-      ],
-      "regressions": [
-        "Only 3 passes before the switch",
-        "Allow the 6 two extra touches"
-      ],
-      "activity_notes": "Two areas running together, 8 per area; pressers rotate every 90 seconds."
+      "progressions": ["6 must play first time", "Presser can enter the 6 zone"],
+      "regressions": ["Only 2 passes before the switch", "Allow the 6 two extra touches"],
+      "activity_notes": "Everyone is in the area; presser changes on every turnover so nobody presses for more than about a minute."
     },
     {
       "phase": "Technical",
-      "title": "Unlock the mid-block: drop, switch, 2v1",
+      "title": "Drop, switch, 2v1",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "half"
-        },
-        "caption": "Blue 8 + coach (as a CB) against a red 4-2-2 mid-block. 8 drops on an angle, ball goes 8 to 6, 6 opens up and switches to the far side for the 2v1.",
+        "area": {"type": "grid", "length": 40, "width": 55},
+        "caption": "Full pitch width. 8 drops on an angle, ball goes 8 to 6, 6 opens up and switches to the far side for the RB + RW 2v1 on their FB.",
         "elements": [
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 44.5,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 3,
-            "y": 35,
-            "label": "CB"
-          },
-          {
-            "type": "player",
-            "team": "coach",
-            "x": 3,
-            "y": 19,
-            "label": "C"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 10,
-            "y": 45,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 9,
-            "y": 26,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 30,
-            "y": 51,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 31,
-            "y": 39,
-            "label": "LW"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 33,
-            "y": 28,
-            "label": "9"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 30,
-            "y": 4,
-            "label": "RW"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 20,
-            "y": 9,
-            "label": "RB"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 13,
-            "y": 33,
-            "label": "F"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 13,
-            "y": 18,
-            "label": "F"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 37,
-            "y": 46,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 38,
-            "y": 34,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 38,
-            "y": 21,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 36,
-            "y": 9,
-            "label": ""
-          },
-          {
-            "type": "ball",
-            "x": 10.8,
-            "y": 44.2
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                10.5,
-                44
-              ],
-              [
-                9.5,
-                27.5
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                10,
-                25
-              ],
-              [
-                19.5,
-                10
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "run",
-            "points": [
-              [
-                31,
-                5
-              ],
-              [
-                38,
-                5
-              ]
-            ]
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 22,
-            "y": 40,
-            "label": "M"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 22,
-            "y": 24,
-            "label": "M"
-          }
+          {"type": "cone", "x": 39.5, "y": 2, "color": "blue"},
+          {"type": "cone", "x": 39.5, "y": 14, "color": "blue"},
+          {"type": "player", "team": "A", "x": 3, "y": 36, "label": "CB"},
+          {"type": "player", "team": "A", "x": 9, "y": 46, "label": "8"},
+          {"type": "player", "team": "A", "x": 12, "y": 26, "label": "6"},
+          {"type": "player", "team": "A", "x": 20, "y": 6, "label": "RB"},
+          {"type": "player", "team": "A", "x": 30, "y": 4, "label": "RW"},
+          {"type": "player", "team": "B", "x": 16, "y": 37, "label": "F"},
+          {"type": "player", "team": "B", "x": 17, "y": 22, "label": "F"},
+          {"type": "player", "team": "B", "x": 32, "y": 13, "label": "FB"},
+          {"type": "ball", "x": 9.8, "y": 45.2},
+          {"type": "arrow", "style": "pass", "points": [[9.5, 45], [11.5, 27.5]]},
+          {"type": "arrow", "style": "pass", "points": [[12.8, 25], [19.8, 7.2]]},
+          {"type": "arrow", "style": "run", "points": [[31, 5], [38, 7]]}
         ]
       },
-      "setup": "Half pitch. Blue 8 (CB, 6, 8, LB, LW, 9, RW, RB) with the coach playing the second CB vs red 8 in a 4-2-2 mid-block (back 4, 2 mids, 2 forwards) + GK. Red hold a mid-block: their 2 forwards start level with the top of the circle and only press when blue play backwards. 10 balls with the coach.",
+      "setup": "40m long, full width (55m). 8 players: blue CB, 8, 6, RB, RW v red 2 forwards + FB. Blue score by dribbling through the blue gate on the far side. 9: add a red midfielder who guards the 6. 10: add a blue LW high on the near side and a red second FB.",
       "how": [
-        "Walk through at 50%: LB goes high into the winger's lane, LW comes inside, 8 drops on an angle beside the CB (not all the way to full-back).",
-        "Count the last line: LB, LW, 9, RW, plus the far 8 or RB pushing on = 5 v their back 4.",
-        "Ball goes CB to 8. If their forward steps to the 8, the 8 plays back and the ball moves on to the 6.",
-        "6 receives on the open side behind their 2 forwards and switches to the RB/RW for the far-side 2v1 (coach as CB can drop off to give a new angle if their forward follows the 6).",
-        "Then 75%, then live. Coach restarts from a CB every rep."
+        "Walk through at 50%: 8 drops on an angle beside the CB (not all the way to full-back) and receives facing forward.",
+        "Their 2 forwards shuffle across. Ball goes 8 to 6 (if the forward steps to the 8, play back to the CB, who drops off for a new angle).",
+        "6 receives on the open side behind their 2 forwards and switches to the RB in one action.",
+        "RB and RW play the 2v1 against their FB and dribble through the gate.",
+        "Then 75%, then live. Rotate 3 players into red every 4 minutes; last 6 minutes switch to the other side."
       ],
-      "link_to_theme": "The full shape against a mid-block from the video: the 5v4, the dropped 8, and the switch through the 6.",
+      "link_to_theme": "The key moves from the video against a mid-block: the dropped 8, the CB question, and the switch through the 6.",
       "coaching_points": [
-        "8 drops at an angle so they face forward on receiving - an open body sees both the FB line and the 6",
+        "8 drops at an angle so they face forward on receiving - an open body sees both the far side and the 6",
         "6 positions behind and between their 2 forwards, ready to receive left and play right in one action",
         "Make them shuffle first: 2-3 passes on one side, then switch - don't switch too early",
         "Far-side RB and RW stay wide and high so the 2v1 is ready when the ball arrives"
       ],
-      "questions": [
-        "Their forward followed our 6: who has the ball and who is free?",
-        "How many are on their back line? How many are we?"
-      ],
-      "progressions": [
-        "Red can press when the ball is played backwards",
-        "Blue max 3 touches",
-        "A player replaces the coach as CB"
-      ],
-      "regressions": [
-        "Red forwards passive",
-        "Remove one red midfielder"
-      ],
-      "activity_notes": "All 16 outfield involved at once (8v8 plus coach). Swap blue and red at 10 minutes so everyone practises the shape."
+      "questions": ["Their forward followed our 6: who is free?", "When is the right moment to switch?"],
+      "progressions": ["Red can press when the ball goes backwards", "Blue max 3 touches"],
+      "regressions": ["Red forwards passive", "Remove the red FB (RB and RW go 2v0 - just time the switch)"],
+      "activity_notes": "All 8-10 involved every rep; reps reset from the CB every 15-20 seconds."
     },
     {
       "phase": "Small-sided",
-      "title": "5v4 + GK: central 3v2 to goal",
+      "title": "Central 3v2 to goal",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "half"
-        },
+        "area": {"type": "grid", "length": 45, "width": 40},
         "caption": "8 opens out to the FB, then plays the reverse pass through the lines to the W. 8, 9 and W against 2 CBs = central 3v2.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 0,
-            "w": 16,
-            "h": 55,
-            "color": "blue",
-            "label": "BUILD"
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 44.5,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 13,
-            "y": 34,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 8,
-            "y": 22,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 24,
-            "y": 50,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 27,
-            "y": 36,
-            "label": "LW"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 30,
-            "y": 25,
-            "label": "9"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 27,
-            "y": 6,
-            "label": "RW"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 34,
-            "y": 45,
-            "label": "FB"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 36,
-            "y": 32,
-            "label": "CB"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 36,
-            "y": 20,
-            "label": "CB"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 34,
-            "y": 9,
-            "label": "FB"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 20,
-            "y": 29,
-            "label": "M"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 20,
-            "y": 41,
-            "label": "M"
-          },
-          {
-            "type": "ball",
-            "x": 13.8,
-            "y": 33.2
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                14,
-                35
-              ],
-              [
-                23,
-                49
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                24,
-                48.5
-              ],
-              [
-                31,
-                37
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "run",
-            "points": [
-              [
-                14,
-                33
-              ],
-              [
-                26,
-                30
-              ]
-            ]
-          }
+          {"type": "zone", "x": 0, "y": 0, "w": 14, "h": 40, "color": "blue", "label": "BUILD"},
+          {"type": "goal", "x": 44.7, "y": 14, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 44.7, "y": 26, "size": "mini", "facing": "left"},
+          {"type": "player", "team": "A", "x": 11, "y": 24, "label": "8"},
+          {"type": "player", "team": "A", "x": 6, "y": 12, "label": "6"},
+          {"type": "player", "team": "A", "x": 21, "y": 36, "label": "LB"},
+          {"type": "player", "team": "A", "x": 26, "y": 26, "label": "LW"},
+          {"type": "player", "team": "A", "x": 29, "y": 15, "label": "9"},
+          {"type": "player", "team": "B", "x": 33, "y": 32, "label": "FB"},
+          {"type": "player", "team": "B", "x": 35, "y": 24, "label": "CB"},
+          {"type": "player", "team": "B", "x": 35, "y": 13, "label": "CB"},
+          {"type": "ball", "x": 11.8, "y": 23.2},
+          {"type": "arrow", "style": "pass", "points": [[12, 25], [20, 35]]},
+          {"type": "arrow", "style": "pass", "points": [[21, 34.5], [30, 28]]},
+          {"type": "arrow", "style": "run", "points": [[12, 23], [24, 20]]}
         ]
       },
-      "setup": "Half pitch. Blue 6 (6, 8, LB, LW, 9, RW) vs red back 4 + 2 midfielders + GK. Blue start in the build zone. Red counter into 2 mini goals on the halfway line. 4 spare players: 2 blue, 2 red, swap every 4 minutes.",
+      "setup": "45x40m, 2 mini goals on the end line. 8 players: blue 5 (6, 8, LB, LW, 9) v red 3 (2 CBs + FB). Red counter by dribbling over the start line. 9: add a red midfielder (5v4). 10: add a blue RW and a red second FB (6v5, the full 5v4 on their back line).",
       "how": [
         "Coach feeds the 6 or the 8 in the build zone.",
-        "Goal = 1. Goal from a central 3v2 (8, 9 and W all in the central lanes against their 2 CBs) = 2.",
-        "Goal after a switch of play = 2.",
-        "Red win it: score in a mini goal within 6 seconds."
+        "Goal = 1. Goal from a central 3v2 (8, 9 and W all in the middle against their 2 CBs) = 2.",
+        "Red win it: dribble over the start line = 1.",
+        "Swap 3 players into red every 4 minutes."
       ],
-      "link_to_theme": "Uses the 5v4 last line and the central 3v2 to finish, the end product of the whole block.",
+      "link_to_theme": "Uses the overload on their last line and the central 3v2 to finish, the end product of the whole block.",
       "coaching_points": [
         "8: open out to the FB, then look inside for the reverse pass on the W's back foot",
         "W receives between their FB and CB, and if they can't turn, plays back to the 8 and the ball moves on",
         "9 pins both CBs; the 8 arrives late as the third attacker",
-        "If the near side is crowded, play back to the 6 and switch"
+        "If the near side is crowded, play back to the 6 and go again"
       ],
-      "progressions": [
-        "Add a third red midfielder (6v7 + GK)",
-        "Blue must score within 15 seconds"
-      ],
-      "regressions": [
-        "Remove a red midfielder",
-        "Red FBs can't leave the wide lanes"
-      ],
-      "activity_notes": "Spare 4 run a 2v2 possession game on the side, swap in every 4 minutes. Coach keeps a ball-stock on the halfway line for instant restarts.",
-      "step": {
-        "space": "Narrow the pitch to 45m to make the 3v2 harder to find",
-        "task": "Bonus only counts if the 6 touched the ball in the move"
-      }
+      "progressions": ["Red +1 at any number", "Blue must score within 12 seconds"],
+      "regressions": ["Red FB can't leave the wide lane", "Red CBs can't tackle, only intercept"],
+      "activity_notes": "Everyone plays; coach keeps a ball-stock at the start line for instant restarts.",
+      "step": {"space": "Narrow to 32m to make the 3v2 harder to find", "task": "Bonus only counts if the 6 touched the ball in the move"}
     },
     {
       "phase": "Live game scenario",
-      "title": "8v8 + GKs: beat the block",
+      "title": "4v4 (+ floaters): beat the block",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "full"
-        },
-        "caption": "8v8 + GKs. The defending team must drop into a mid-block (no pressing in the opposition's 23). Switch of play into a circle entry = 1 point, goal = 2.",
+        "area": {"type": "grid", "length": 50, "width": 40},
+        "caption": "4v4 with end zones. Out of possession, teams can't press in the opponent's end zone. Switch of play into a goal = 2.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 0,
-            "w": 22.9,
-            "h": 55,
-            "color": "white",
-            "label": "NO PRESS"
-          },
-          {
-            "type": "zone",
-            "x": 68.5,
-            "y": 0,
-            "w": 22.9,
-            "h": 55,
-            "color": "white",
-            "label": "NO PRESS"
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 1.5,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 89.9,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 14,
-            "y": 34,
-            "label": "CB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 14,
-            "y": 20,
-            "label": "CB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 26,
-            "y": 27,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 22,
-            "y": 46,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 56,
-            "y": 51,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 58,
-            "y": 38,
-            "label": "LW"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 62,
-            "y": 26,
-            "label": "9"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 56,
-            "y": 6,
-            "label": "RW"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 34,
-            "y": 32,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 34,
-            "y": 20,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 48,
-            "y": 44,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 48,
-            "y": 12,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 66,
-            "y": 46,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 68,
-            "y": 32,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 68,
-            "y": 20,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 64,
-            "y": 9,
-            "label": ""
-          }
+          {"type": "zone", "x": 0, "y": 0, "w": 12, "h": 40, "color": "white", "label": "NO PRESS"},
+          {"type": "zone", "x": 38, "y": 0, "w": 12, "h": 40, "color": "white", "label": "NO PRESS"},
+          {"type": "goal", "x": 0.3, "y": 7, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.3, "y": 33, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 49.7, "y": 7, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 49.7, "y": 33, "size": "mini", "facing": "left"},
+          {"type": "player", "team": "A", "x": 6, "y": 20, "label": "CB"},
+          {"type": "player", "team": "A", "x": 16, "y": 30, "label": "8"},
+          {"type": "player", "team": "A", "x": 30, "y": 36, "label": "W"},
+          {"type": "player", "team": "A", "x": 32, "y": 6, "label": "W"},
+          {"type": "player", "team": "B", "x": 18, "y": 22, "label": ""},
+          {"type": "player", "team": "B", "x": 26, "y": 30, "label": ""},
+          {"type": "player", "team": "B", "x": 38, "y": 28, "label": ""},
+          {"type": "player", "team": "B", "x": 38, "y": 14, "label": ""},
+          {"type": "ball", "x": 6.8, "y": 19.2},
+          {"type": "arrow", "style": "pass", "points": [[7, 18.5], [31, 7]]}
         ]
       },
-      "setup": "Full pitch, 8v8 + GKs. The team out of possession must set a mid-block: they can't press inside the opposition's 23 (white zones). Spares rotate every 4 minutes.",
+      "setup": "50x40m with 12m end zones, 2 mini goals at each end. 8 players: 4v4. 9: 1 neutral floater who plays as the 6 for the team in possession. 10: 5v5.",
       "how": [
-        "Restarts always from the GK.",
-        "Switch of play that leads to a circle entry = 1 point; goal = 2 points; goal from a central 3v2 = 3 points.",
-        "Coach freeze once every 4 minutes on the 5v4 picture (30 seconds max).",
-        "Last 5 minutes: remove the no-press zones."
+        "Restarts always from the team's CB in their end zone.",
+        "Out of possession, you can't press in the opponent's end zone, so you have to hold a block.",
+        "Goal = 1. Goal that came after a switch of play = 2. Goal from a central 3v2 = 3.",
+        "4 x 4-minute games, 1 minute rest. Last game: remove the no-press zones."
       ],
-      "link_to_theme": "Rehearses the full plan against a team playing the way a mid-block opponent will on Saturday.",
+      "link_to_theme": "Rehearses the whole plan against a team holding a block, the way a mid-block opponent will on a Saturday.",
       "coaching_points": [
         "Patience: circulate until their block shuffles, then switch",
         "CB drops off to give their forward a question: follow or protect the centre?",
-        "All of Weeks 1-3 still apply - lanes, rotation chain, someone moves, I move"
+        "Weeks 1-3 still apply - lanes, rotation chain, someone moves, I move"
       ],
-      "progressions": [
-        "Defending team can press anywhere (the 'Saturday press')"
-      ],
-      "regressions": [
-        "Neutral floater for the team in possession"
-      ],
-      "activity_notes": "Everyone plays; ball-stocks behind both goals."
+      "progressions": ["Defending team can press anywhere (the 'Saturday press')"],
+      "regressions": ["Floater plays even at 8 (rotate the role)"],
+      "activity_notes": "Everyone plays; ball-stocks behind both ends."
     },
     {
       "phase": "Game",
-      "title": "11v11 (or numbers available): the whole picture",
+      "title": "4v4 / 5v5 on the half pitch: the whole picture",
       "minutes": 20,
-      "setup": "Full pitch match, normal rules. Swap bibs at 10 minutes.",
+      "setup": "Half pitch, full goal at one end (GK if one trains, otherwise 2 mini goals), 2 mini goals on halfway. 4v4, 4v4+1 or 5v5. Swap ends at 10 minutes.",
       "how": [
         "Normal game - no conditions.",
         "Focus: all four principles from the block.",
-        "Coach tallies: completed rotations, switches of play, circle entries from a 5v4."
+        "Coach tallies: completed rotations, switches of play, goals from an overload."
       ],
       "coaching_points": [
         "Two in every lane",
         "FB in, 8 out, W in",
         "Someone moves, I move",
-        "Five on four, then switch"
+        "Plus one on their last line, then switch"
       ],
-      "questions": [
-        "Which principle gave us the most circle entries this month? Which one do we still need?"
-      ]
+      "questions": ["Which principle gave us the most chances this month? Which one do we still need?"]
     }
   ],
-  "safety": [
-    "Shin guards and gum shields for all",
-    "GKs fully kitted for blocks 2-5",
-    "Switches are flat slaps or hits along the ground - no raised balls across the pitch in blocks 1-3"
-  ],
-  "reflection_prompts": [
-    "Could the 6 switch in one action, or did they need a stop-turn-play?",
-    "Did we get 5 on their last line? Who was missing?",
-    "What do we revisit in the next block?"
-  ]
+  "safety": ["Shin guards and gum shields for all", "Switches are flat slaps or hits along the ground - no raised balls", "If a GK trains, they must be fully kitted before going in goal"],
+  "reflection_prompts": ["Could the 6 switch in one action, or did they need a stop-turn-play?", "Did we get plus one on their last line? Who was missing?", "What do we revisit in the next block?"]
 }

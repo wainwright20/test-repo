@@ -27,8 +27,8 @@ rows = [
      p("8 drags their CM, 9 drops, 8 runs beyond on the blind side as the temporary 9. Diagonal passes onto the back foot. Far 8 fills the centre; 9 plays round the corner.", B),
      p("Someone moves, I move / Drop and go / Diagonal", B)],
     [p("4", BB), p("<b>Breaking a mid-block</b>", B),
-     p("Against a 4-4-2 style block: FB high, W inside, 8 drops on an angle = 5v4 on their last line. CB drops to question their forward. 6 switches in one action for the far-side 2v1. Central 3v2 (8, 9, W) on their CBs.", B),
-     p("Five on four / Open up, switch / Three on two", B)],
+     p("Against a mid-block: 8 drops on an angle, CB drops to question their forward, 6 switches in one action for the far-side 2v1. Plus one on their last line; central 3v2 (8, 9, W) on their CBs.", B),
+     p("Plus one / Open up, switch / Three on two", B)],
 ]
 t = Table(rows, colWidths=[13*mm, 38*mm, 92*mm, 37*mm], repeatRows=1)
 t.setStyle(TableStyle([
@@ -53,7 +53,14 @@ story = [
     "Back 4 (LB, LCB, RCB, RB), a holding 6, two inside mids (8s), LW, 9 (centre forward), RW. Blue is always us, red is the opposition.",
     "Lanes, viewed from our goal: left wide lane, left half-space, centre, right half-space, right wide lane. Mark them with cones on both sidelines every week.",
     "\"Back foot\" in the source video means receiving on an open body (shoulders turned so you can see forward and play first time).",
-    "No offside in hockey: the 9 can stay high and pin both CBs, which makes the 5v4 and central 3v2 even easier to set up than in the video.",
+    "No offside in hockey: the 9 can stay high and pin both CBs, which makes the overload and central 3v2 even easier to set up than in the video.",
+]) + [
+    p("Built for 8-10 players", H2),
+] + bl([
+    "Every rotation in the video happens on one side of the pitch (FB, 8, W, 9 against their W, CM, FB, CB). So the technical and small-sided blocks coach one side at a time in a 3-lane area: a unit of 5 against 3 is the real thing, not a watered-down version.",
+    "Every block is written for 8. The set-up line says exactly what to add at 9 and at 10 (usually a floater, or one more defender to make it harder).",
+    "Games are 4v4 (8), 4v4 + floater (9) or 5v5 (10) on a 50x40m area or half pitch, with mini goals. If a GK trains, use the full goal in the final game.",
+    "Rotate attackers and defenders every 4 minutes so everyone learns the attacking roles.",
 ]) + [
     p("How to run the block", H2),
 ] + bl([
@@ -64,7 +71,7 @@ story = [
     "If Week 2 or 3 doesn't stick, repeat that week rather than moving on. Week 4 relies on everything before it.",
 ]) + [
     p("Assumptions", H2),
-    p("16 outfield + 2 GKs, half pitch for most of each session and the full pitch for the live game scenario and game, 20+ balls, 3 sets of bibs, 4 mini goals. Every drill lists a regression if numbers are down."),
+    p("8-10 players, no dedicated GK (mini goals throughout), half pitch, 15+ balls, 2 sets of bibs, 4 mini goals, cones in 4 colours."),
 ]
 
 doc = SimpleDocTemplate(sys.argv[1], pagesize=A4, leftMargin=15*mm, rightMargin=15*mm, topMargin=14*mm, bottomMargin=14*mm)

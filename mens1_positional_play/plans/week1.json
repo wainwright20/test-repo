@@ -2,17 +2,12 @@
   "team": "Men's 1st XI",
   "coach": "Head Coach",
   "date": "Positional Play Block - Week 1 of 4",
-  "venue": "Half pitch (full pitch for blocks 2, 4 and 5)",
+  "venue": "Half pitch",
   "duration": 90,
-  "players": "16 outfield + 2 GK",
-  "equipment": [
-    "Balls x20",
-    "Cones (4 colours) to mark the 5 lanes",
-    "Bibs x3 sets",
-    "Mini goals x4"
-  ],
+  "players": "8-10 (numbers below are for 8; '+1/+2' says what to add)",
+  "equipment": ["Balls x15", "Cones (4 colours) to mark the lanes", "Bibs x2 sets", "Mini goals x4"],
   "theme": "Two players in every lane",
-  "focus": "In possession: occupy all 5 lanes with 2 players each, and when the full-back comes inside, the inside mid (8) goes out wide",
+  "focus": "In possession: two players in each lane, and when the full-back comes inside, the inside mid (8) goes out wide",
   "objectives": [
     "Every player can name the 5 lanes and checks the 'two per lane' picture before receiving",
     "Full-back inverts into the half-space and the 8 drifts wide at the same moment, creating a 2v1 on their centre mid",
@@ -27,712 +22,183 @@
   "blocks": [
     {
       "phase": "Warm-up",
-      "title": "Rondo 4v2 + pivot: find the free player",
+      "title": "Rondo 5+1 v 2: find the pivot",
       "minutes": 10,
       "diagram": {
-        "area": {
-          "type": "grid",
-          "length": 15,
-          "width": 15
-        },
-        "caption": "x2 grids. 4 outside + 1 pivot (6) keep the ball from 2 pressers. A pass through the pressers into the pivot = 1 point.",
+        "area": {"type": "grid", "length": 18, "width": 18},
+        "caption": "5 outside + 1 pivot (6) keep the ball from 2 pressers. A pass through the pressers into the pivot = 1 point.",
         "elements": [
-          {
-            "type": "player",
-            "team": "A",
-            "x": 0.8,
-            "y": 7.5,
-            "label": "1"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 7.5,
-            "y": 14.2,
-            "label": "2"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 14.2,
-            "y": 7.5,
-            "label": "3"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 7.5,
-            "y": 0.8,
-            "label": "4"
-          },
-          {
-            "type": "player",
-            "team": "neutral",
-            "x": 9.5,
-            "y": 6,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 5,
-            "y": 9.5,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 5.5,
-            "y": 4.5,
-            "label": ""
-          },
-          {
-            "type": "ball",
-            "x": 1.6,
-            "y": 6.8
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                1.6,
-                6.4
-              ],
-              [
-                8.8,
-                5.8
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                10.2,
-                6.5
-              ],
-              [
-                13.6,
-                7.2
-              ]
-            ]
-          }
+          {"type": "player", "team": "A", "x": 0.8, "y": 9, "label": "1"},
+          {"type": "player", "team": "A", "x": 6, "y": 17.2, "label": "2"},
+          {"type": "player", "team": "A", "x": 14, "y": 17.2, "label": "3"},
+          {"type": "player", "team": "A", "x": 17.2, "y": 7, "label": "4"},
+          {"type": "player", "team": "A", "x": 8, "y": 0.8, "label": "5"},
+          {"type": "player", "team": "neutral", "x": 11, "y": 8, "label": "6"},
+          {"type": "player", "team": "B", "x": 6, "y": 11, "label": ""},
+          {"type": "player", "team": "B", "x": 6.5, "y": 5.5, "label": ""},
+          {"type": "ball", "x": 1.6, "y": 8.2},
+          {"type": "arrow", "style": "pass", "points": [[1.6, 8.6], [10.2, 8]]},
+          {"type": "arrow", "style": "pass", "points": [[11.6, 8.8], [13.6, 16.4]]}
         ]
       },
-      "setup": "Two 15x15m grids, 8 per grid: 4 outside, 1 pivot in the middle, 2 pressers and 1 'next presser' on the line who swaps in every 45 seconds. Pressers also swap on a turnover.",
+      "setup": "One 18x18m grid. 8 players: 5 outside, 1 pivot in the middle, 2 pressers. 9 players: add a second pivot (5+2 v 2). 10 players: add a third presser (5+2 v 3).",
       "how": [
         "Outside players keep the ball, max 2 touches.",
-        "Pass through the 2 pressers into the pivot = 1 point; pivot plays out to a different side = 2 points.",
+        "Pass through the pressers into the pivot = 1 point; pivot plays out to a different side = 2 points.",
         "Pressers win it: the player who lost it swaps in.",
         "Last 3 minutes: pivot must receive and turn in one action (open body)."
       ],
       "link_to_theme": "The pivot is the free player between the lines. It starts the session's habit: who's free, and can I find them?",
       "coaching_points": [
         "Pivot moves into the gap between the 2 pressers, not behind one of them",
-        "Outside players receive on the open stick side, body side-on so they can see both the pivot and the next outside player",
+        "Outside players receive on the open stick side, body side-on so they can see the pivot and the next outside player",
         "Pivot checks shoulder before the ball arrives so the first touch goes away from pressure"
       ],
-      "progressions": [
-        "One-touch outside",
-        "Add a 3rd presser (4+1 v 3)"
-      ],
-      "regressions": [
-        "Bigger grid (18x18)",
-        "Unlimited touches for the pivot"
-      ],
-      "activity_notes": "Two grids running at once. The only player not involved is the next presser, who swaps in every 45 seconds."
+      "progressions": ["One-touch outside", "Shrink to 15x15"],
+      "regressions": ["Bigger grid (22x22)", "Unlimited touches for the pivot"],
+      "activity_notes": "Everyone is in the grid: no queues at 8, 9 or 10."
     },
     {
       "phase": "Technical",
-      "title": "FB in, 8 out: the inversion pattern",
+      "title": "FB in, 8 out: the inversion pattern (one-side unit)",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "full"
-        },
-        "caption": "Left-side unit (x2, one each half). As LCB receives, LB steps into the half-space and the 8 drifts wide. LCB finds the free player.",
+        "area": {"type": "grid", "length": 45, "width": 33},
+        "caption": "Left side of the pitch: wide lane, half-space, centre. As LCB receives, LB steps inside and the 8 drifts wide. LCB finds the free player and the unit carries over the far line.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 44,
-            "w": 91.4,
-            "h": 11,
-            "color": "white",
-            "label": "WIDE LANE"
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 33,
-            "w": 91.4,
-            "h": 11,
-            "color": "yellow",
-            "label": "HALF-SPACE"
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 2,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "coach",
-            "x": 8,
-            "y": 30,
-            "label": "H"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 17,
-            "y": 36,
-            "label": "LCB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 26,
-            "y": 51,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 27,
-            "y": 25,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 38,
-            "y": 37,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 58,
-            "y": 50,
-            "label": "LW"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 33,
-            "y": 46,
-            "label": "W"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 45,
-            "y": 30,
-            "label": "CM"
-          },
-          {
-            "type": "ball",
-            "x": 17.8,
-            "y": 35
-          },
-          {
-            "type": "arrow",
-            "style": "run",
-            "points": [
-              [
-                26.5,
-                50
-              ],
-              [
-                30,
-                41
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "run",
-            "points": [
-              [
-                39,
-                38.5
-              ],
-              [
-                43,
-                50
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                18,
-                34.5
-              ],
-              [
-                26.3,
-                26
-              ]
-            ]
-          }
+          {"type": "zone", "x": 0, "y": 22, "w": 45, "h": 11, "color": "white", "label": "WIDE"},
+          {"type": "zone", "x": 0, "y": 11, "w": 45, "h": 11, "color": "yellow", "label": "HALF-SPACE"},
+          {"type": "player", "team": "A", "x": 3, "y": 12, "label": "LCB"},
+          {"type": "player", "team": "A", "x": 3, "y": 3, "label": "RCB"},
+          {"type": "player", "team": "A", "x": 11, "y": 30, "label": "LB"},
+          {"type": "player", "team": "A", "x": 13, "y": 4, "label": "6"},
+          {"type": "player", "team": "A", "x": 22, "y": 15, "label": "8"},
+          {"type": "player", "team": "A", "x": 38, "y": 29, "label": "LW"},
+          {"type": "player", "team": "B", "x": 17, "y": 26, "label": "W"},
+          {"type": "player", "team": "B", "x": 28, "y": 9, "label": "CM"},
+          {"type": "ball", "x": 3.8, "y": 11.2},
+          {"type": "arrow", "style": "run", "points": [[11.5, 29], [14, 19]]},
+          {"type": "arrow", "style": "run", "points": [[23, 16.5], [27, 28]]},
+          {"type": "arrow", "style": "pass", "points": [[4, 11], [12.3, 5]]}
         ]
       },
-      "setup": "Full pitch split in two: one unit attacks each half. Per unit: LCB, LB, 6, 8, LW (blue) + 2 opposition in red (their winger and their centre mid) + a helper feeding from the GK area. Mark the 5 lanes with cones on the sidelines and halfway.",
+      "setup": "45x33m area (the left third of the pitch width, from the 23 to halfway) with 3 lanes coned. 8 players: blue RCB, LCB, LB, 6, 8, LW + red W and CM. 9: add a blue 9 high in the centre. 10: add a red FB who marks the LW.",
       "how": [
-        "Helper feeds LCB. On the feed, LB steps inside into the half-space and the 8 drifts out to the wide lane: two per lane is kept.",
-        "Pattern A: LCB to 6, 6 opens up and plays out to the 8 wide, 8 carries into the space ahead.",
+        "RCB plays across to LCB. As the ball travels, LB steps inside into the half-space and the 8 drifts out to the wide lane.",
+        "Pattern A: LCB to 6, 6 opens up and plays out to the 8 wide, 8 carries over the far line.",
         "Pattern B: LCB into LB on the back foot (open body), one-touch set to the 6, 6 plays the diagonal into the 8.",
-        "Rounds 1-2 unopposed at 70%, then the red W and CM go live at 50% and the LCB must pick the right pattern.",
-        "Swap to the right side after 10 minutes (RCB, RB, 6, 8, RW)."
+        "First 6 minutes unopposed at 70%, then the red W and CM go live at 50% and the LCB must pick the right pattern.",
+        "Rotate 2 blue players into red every 4 reps. Last 8 minutes: flip the cones and do it on the right side."
       ],
-      "link_to_theme": "The core rotation of the whole programme: FB in, 8 out keeps two per lane and creates a 2v1 against their centre mid.",
+      "link_to_theme": "The core rotation of the whole programme. All of it happens on one side of the pitch, so a unit of 6 learns it exactly as the full team will use it.",
       "coaching_points": [
         "Timing: LB and 8 move as the ball travels to the LCB, not after the LCB has received",
         "LB receives in the half-space with an open body (shoulders facing the far side) so they can play forward or set",
         "8 arrives wide on the blind side of their winger, who is watching the ball",
         "LCB: if the W blocks the line to the LB, the 8 wide is the free player - play it early"
       ],
-      "questions": [
-        "Their winger followed our LB inside: who is free now?",
-        "Why does the 8 have to go wide when the LB comes in?"
-      ],
-      "progressions": [
-        "Red CM jumps to whoever receives, live",
-        "Limit the blue unit to 2 touches each"
-      ],
-      "regressions": [
-        "Red players passive (stick only, no tackling)",
-        "Helper calls 'A' or 'B' to choose the pattern"
-      ],
-      "activity_notes": "Two units of 8 on separate halves. Red players rotate with blue every 3 reps so nobody stands for more than one rep."
+      "questions": ["Their winger followed our LB inside: who is free now?", "Why does the 8 have to go wide when the LB comes in?"],
+      "progressions": ["Red CM jumps to whoever receives, live", "Blue limited to 2 touches each"],
+      "regressions": ["Red players passive (stick only, no tackling)", "Coach calls 'A' or 'B' to choose the pattern"],
+      "activity_notes": "All 8-10 involved every rep. Reps reset from the RCB every 15-20 seconds, so there's no standing about."
     },
     {
       "phase": "Small-sided",
-      "title": "Lane game 7v6: build out with two per lane",
+      "title": "Lane game 5v3: build out with two per lane",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "half"
-        },
-        "caption": "Blue build from the halfway line and score by carrying into the circle. Red press and score in the full goal. Max 2 blue per lane.",
+        "area": {"type": "grid", "length": 45, "width": 33},
+        "caption": "Blue 5 build from the start line and score by dribbling over the end line. Red 3 press and counter into 2 mini goals. Max 2 blue per lane.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 0,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 22,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 44,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 0,
-            "w": 6,
-            "h": 55,
-            "color": "blue",
-            "label": "BUILD"
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 44.5,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 4,
-            "y": 36,
-            "label": "LCB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 4,
-            "y": 19,
-            "label": "RCB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 13,
-            "y": 40,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 12,
-            "y": 6,
-            "label": "RB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 12,
-            "y": 27,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 20,
-            "y": 50,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 24,
-            "y": 17,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 9,
-            "y": 31,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 10,
-            "y": 46,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 17,
-            "y": 28,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 19,
-            "y": 40,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 21,
-            "y": 10,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 27,
-            "y": 30,
-            "label": ""
-          },
-          {
-            "type": "ball",
-            "x": 4.8,
-            "y": 35
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                5,
-                37
-              ],
-              [
-                19.3,
-                49.3
-              ]
-            ]
-          },
-          {
-            "type": "arrow",
-            "style": "dribble",
-            "points": [
-              [
-                21,
-                50
-              ],
-              [
-                32,
-                48
-              ]
-            ]
-          }
+          {"type": "zone", "x": 0, "y": 22, "w": 45, "h": 11, "color": "white", "label": ""},
+          {"type": "zone", "x": 0, "y": 0, "w": 45, "h": 11, "color": "white", "label": ""},
+          {"type": "goal", "x": 0.3, "y": 6, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.3, "y": 27, "size": "mini", "facing": "right"},
+          {"type": "player", "team": "A", "x": 4, "y": 15, "label": "LCB"},
+          {"type": "player", "team": "A", "x": 14, "y": 19, "label": "LB"},
+          {"type": "player", "team": "A", "x": 12, "y": 4, "label": "6"},
+          {"type": "player", "team": "A", "x": 21, "y": 29, "label": "8"},
+          {"type": "player", "team": "A", "x": 37, "y": 26, "label": "LW"},
+          {"type": "player", "team": "B", "x": 13, "y": 12, "label": "W"},
+          {"type": "player", "team": "B", "x": 23, "y": 14, "label": "CM"},
+          {"type": "player", "team": "B", "x": 31, "y": 22, "label": "FB"},
+          {"type": "ball", "x": 4.8, "y": 14.2},
+          {"type": "arrow", "style": "pass", "points": [[5, 16], [20.2, 28.3]]},
+          {"type": "arrow", "style": "dribble", "points": [[22, 29], [33, 31]]}
         ]
       },
-      "setup": "Half pitch, 5 lanes coned across the width. Blue 7 (back 4, 6, two 8s) start on the halfway line with the ball. Red 6 + GK defend the full goal. 3 spare players rotate in (one blue, two red) every 3 minutes.",
+      "setup": "Same 45x33m, 3-lane area. 8 players: blue 5 (LCB, LB, 6, 8, LW) v red 3 (W, CM, FB). 9: add a red 4th (second CM) for 5v4. 10: add a blue 9 and a red CB (6v4). Swap 3 blue into red every 4 minutes.",
       "how": [
-        "Coach plays the ball into a blue CB on the halfway line.",
-        "Blue score 1 point by dribbling over the top of the circle (or into the circle with control); 2 points if the entry comes from the FB-in/8-out rotation.",
-        "Rule: max 2 blue in any lane when a pass is played. Coach shouts 'Three!' and the ball turns over.",
-        "Red win it: 6 seconds to score in the full goal."
+        "Coach feeds the LCB on the start line.",
+        "Blue score 1 by dribbling over the end line; 2 if the move used the FB-in/8-out rotation.",
+        "Rule: max 2 blue in any lane when a pass is played - coach shouts 'Three!' and red get the ball.",
+        "Red win it: 6 seconds to score in either mini goal behind the LCB."
       ],
       "link_to_theme": "Takes the pattern into a live build-out where the two-per-lane rule is enforced and rewarded.",
       "coaching_points": [
         "Scan the lane picture before you receive: who has left my lane, who do I need to replace?",
         "Free player usually appears on the blind side of their winger",
-        "Ball speed: 2 touches maximum when we have the 2v1 on their CM",
-        "If the lane is blocked, recycle to the CB and restart the picture, don't force it"
+        "Ball speed: 2 touches maximum while we have the 2v1 on their CM",
+        "If the lane is blocked, recycle to the LCB and restart the picture"
       ],
-      "questions": [
-        "When our LB stepped in, what did their CM have to decide?"
-      ],
-      "progressions": [
-        "Red go 7 (add a forward) so blue lose the spare man",
-        "Blue must score within 20 seconds"
-      ],
-      "regressions": [
-        "Red 5 instead of 6",
-        "Remove the lane turnover rule and just reward rotations with 2 points"
-      ],
-      "activity_notes": "All 16 outfield involved via rotation every 3 minutes, plus a GK. Quick restarts: coach has 10 balls on the halfway line.",
-      "step": {
-        "space": "Narrow to 45m width if blue find it too easy",
-        "people": "Add a red striker to press the CBs (7v7) for the strongest group"
-      }
+      "questions": ["When our LB stepped in, what did their CM have to decide?"],
+      "progressions": ["Red go +1 so blue lose the spare player", "Blue must score within 15 seconds"],
+      "regressions": ["Red CM must stay in the centre lane", "Remove the lane turnover rule and just reward rotations"],
+      "activity_notes": "Everyone plays. Coach has 10 balls at the start line for instant restarts; rest is the 5-10 seconds between reps.",
+      "step": {"space": "Narrow to 28m if blue find it too easy", "people": "Fittest players go red - they do the most running"}
     },
     {
       "phase": "Live game scenario",
-      "title": "8v8 + GKs: lane bonus game",
+      "title": "4v4 (+ floaters): lane bonus game",
       "minutes": 20,
       "diagram": {
-        "area": {
-          "type": "full"
-        },
-        "caption": "8v8 between the circles. In your own half, max 2 per lane. A goal from a move that used the FB-in/8-out rotation counts double.",
+        "area": {"type": "grid", "length": 50, "width": 40},
+        "caption": "4v4 across 3 lanes with 2 mini goals each end. In your own half, max 2 per lane. Goal from a FB-in/8-out rotation = 2.",
         "elements": [
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 0,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 22,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "zone",
-            "x": 0,
-            "y": 44,
-            "w": 45.7,
-            "h": 11,
-            "color": "white",
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 1.5,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "GK",
-            "x": 89.9,
-            "y": 27.5
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 16,
-            "y": 36,
-            "label": "LCB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 16,
-            "y": 19,
-            "label": "RCB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 26,
-            "y": 39,
-            "label": "LB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 25,
-            "y": 27,
-            "label": "6"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 32,
-            "y": 50,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 28,
-            "y": 6,
-            "label": "RB"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 42,
-            "y": 17,
-            "label": "8"
-          },
-          {
-            "type": "player",
-            "team": "A",
-            "x": 60,
-            "y": 30,
-            "label": "9"
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 36,
-            "y": 33,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 34,
-            "y": 20,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 42,
-            "y": 44,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 48,
-            "y": 28,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 62,
-            "y": 40,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 64,
-            "y": 15,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 72,
-            "y": 28,
-            "label": ""
-          },
-          {
-            "type": "player",
-            "team": "B",
-            "x": 52,
-            "y": 10,
-            "label": ""
-          },
-          {
-            "type": "ball",
-            "x": 16.8,
-            "y": 35
-          },
-          {
-            "type": "arrow",
-            "style": "pass",
-            "points": [
-              [
-                17,
-                37
-              ],
-              [
-                31,
-                49.5
-              ]
-            ]
-          }
+          {"type": "zone", "x": 0, "y": 0, "w": 25, "h": 13, "color": "white", "label": ""},
+          {"type": "zone", "x": 0, "y": 27, "w": 25, "h": 13, "color": "white", "label": ""},
+          {"type": "goal", "x": 0.3, "y": 7, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 0.3, "y": 33, "size": "mini", "facing": "right"},
+          {"type": "goal", "x": 49.7, "y": 7, "size": "mini", "facing": "left"},
+          {"type": "goal", "x": 49.7, "y": 33, "size": "mini", "facing": "left"},
+          {"type": "player", "team": "A", "x": 7, "y": 20, "label": "CB"},
+          {"type": "player", "team": "A", "x": 15, "y": 23, "label": "FB"},
+          {"type": "player", "team": "A", "x": 20, "y": 35, "label": "8"},
+          {"type": "player", "team": "A", "x": 36, "y": 30, "label": "W"},
+          {"type": "player", "team": "B", "x": 17, "y": 15, "label": ""},
+          {"type": "player", "team": "B", "x": 26, "y": 25, "label": ""},
+          {"type": "player", "team": "B", "x": 33, "y": 12, "label": ""},
+          {"type": "player", "team": "B", "x": 42, "y": 22, "label": ""},
+          {"type": "player", "team": "neutral", "x": 30, "y": 20, "label": "F"},
+          {"type": "ball", "x": 7.8, "y": 19.2},
+          {"type": "arrow", "style": "pass", "points": [[8, 21], [19.3, 34.3]]}
         ]
       },
-      "setup": "Full pitch, 8v8 + GKs. Lane cones stay out on both sidelines. Spare players (if any) rotate in every 4 minutes.",
+      "setup": "50x40m (across the 23 to halfway), 3 lanes coned, 2 mini goals at each end. 8 players: 4v4 (CB, FB, 8, W each). 9: 1 neutral floater for the team in possession. 10: 2 floaters, or 5v5 adding a 6.",
       "how": [
-        "Every restart (goal, ball out over the back line) is a GK pass to a CB, so we build every time.",
-        "In your own half, max 2 per lane: coach whistle for a free hit to the other team if broken.",
-        "Goal from a move that included the FB-in/8-out rotation = 2 goals.",
-        "Coach freezes play once every 3-4 minutes to show a good or missed lane picture (max 30 seconds)."
+        "Every restart is a pass from the team's CB on their own goal line, so we build every time.",
+        "In your own half, max 2 per lane: free hit to the other team if broken.",
+        "Goal from a move that included the FB-in/8-out rotation = 2.",
+        "Coach freezes play once every 4 minutes to show a good or missed lane picture (30 seconds max)."
       ],
-      "link_to_theme": "Same rule, real game tempo: players have to find the lanes with both teams live and transitions happening.",
+      "link_to_theme": "Same rule, game tempo: both teams live and transitions happening.",
       "coaching_points": [
-        "Re-form the lane picture quickly after a turnover in our favour",
+        "Re-form the lane picture quickly after winning the ball",
         "The 8 who goes wide must be ready to receive and drive, not just stand there",
-        "Rest-defence: while the FB is inside, the 6 and CBs stay connected for the counter"
+        "Rest-defence: while the FB is inside, the CB stays connected for the counter"
       ],
-      "progressions": [
-        "Lane rule applies across the whole pitch",
-        "Only 2-touch in your own half"
-      ],
-      "regressions": [
-        "Add a neutral floater for the team in possession"
-      ],
-      "activity_notes": "Everybody plays. Ball-stocks behind each goal so the GK can restart instantly."
+      "progressions": ["Lane rule applies across the whole area", "Only 2-touch in your own half"],
+      "regressions": ["Add a floater even at 8 (coach plays)", "Remove the lane rule and keep the bonus"],
+      "activity_notes": "Everyone plays. Play 4 x 4-minute games with 1 minute rest; ball-stocks behind each goal."
     },
     {
       "phase": "Game",
-      "title": "11v11 (or numbers available): two per lane",
+      "title": "4v4 / 5v5 on the half pitch: two per lane",
       "minutes": 20,
-      "setup": "Full pitch match, normal rules. Swap bibs at 10 minutes. Coach on the halfway line with lane cones still out.",
+      "setup": "Half pitch (halfway to the back line), 2 mini goals at halfway and the full goal at the other end (or 2 mini goals if no GK). 4v4, 4v4+1 or 5v5. Swap ends and bibs at 10 minutes.",
       "how": [
         "Normal game, no conditions except the focus.",
-        "Focus: every time a CB receives in our half, check the picture - two in each lane.",
+        "Focus: every time a team builds from the back, check the picture - two in each lane on the ball side.",
         "Coach counts how many FB-in/8-out rotations each team completes."
       ],
       "coaching_points": [
@@ -740,19 +206,9 @@
         "Timing of the rotation: as the pass travels",
         "Celebrate finding the free player, not only goals"
       ],
-      "questions": [
-        "How many times did we find the 8 out wide? What stopped it when it didn't work?"
-      ]
+      "questions": ["How many times did we find the 8 out wide? What stopped it when it didn't work?"]
     }
   ],
-  "safety": [
-    "Shin guards and gum shields for all",
-    "GKs fully kitted for blocks 3-5",
-    "No raised hits in blocks 1-3 (small areas)"
-  ],
-  "reflection_prompts": [
-    "Did players move as the ball travelled, or after it arrived?",
-    "Which side (left or right) found the rotation more naturally?",
-    "Who needs one-to-one video on their lane positioning before Week 2?"
-  ]
+  "safety": ["Shin guards and gum shields for all", "No raised hits in blocks 1-4 (small areas)", "If a GK trains, they must be fully kitted before going in goal"],
+  "reflection_prompts": ["Did players move as the ball travelled, or after it arrived?", "Which side (left or right) found the rotation more naturally?", "Who needs one-to-one video on their lane positioning before Week 2?"]
 }
