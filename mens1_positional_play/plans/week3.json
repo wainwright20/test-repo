@@ -1,0 +1,769 @@
+{
+  "team": "Men's 1st XI",
+  "coach": "Head Coach",
+  "date": "Positional Play Block - Week 3 of 4",
+  "venue": "Half pitch (full pitch for blocks 2, 4 and 5)",
+  "duration": 90,
+  "players": "16 outfield + 2 GK",
+  "equipment": [
+    "Balls x20",
+    "Cones (4 colours)",
+    "Bibs x3 sets",
+    "Mini goals x4"
+  ],
+  "theme": "Occupy and vacate: when someone moves, move into their space",
+  "focus": "In possession: 9 drops, 8 runs beyond on the blind side and becomes the temporary 9; the far-side 8 fills the striker's spot to keep two in the central lane",
+  "objectives": [
+    "8 moves away to drag their CM, 9 drops into the gap, 8 then runs beyond on the blind side to become the temporary 9",
+    "CB and FB find the diagonal pass into the dropping 9 or onto the 8's back foot",
+    "Far-side 8 fills the centre so we keep two players in the central lane, and the 9 sets or plays round the corner"
+  ],
+  "key_messages": [
+    "\"Someone moves, I move\" - fill the space they leave",
+    "\"Drop and go\" - 9 drops, 8 goes",
+    "\"Diagonal\" - break lines with the diagonal pass, not the straight one",
+    "\"Round the corner\" - one-touch layoff into the run"
+  ],
+  "blocks": [
+    {
+      "phase": "Warm-up",
+      "title": "Box pass and replace",
+      "minutes": 10,
+      "diagram": {
+        "area": {
+          "type": "grid",
+          "length": 20,
+          "width": 20
+        },
+        "caption": "x2 grids. Central 9 drops to receive, the 8 fills the space they left, ball goes into the new central player. 2 defenders (not shown) passive, then live.",
+        "elements": [
+          {
+            "type": "cone",
+            "x": 1,
+            "y": 1,
+            "color": "orange"
+          },
+          {
+            "type": "cone",
+            "x": 19,
+            "y": 1,
+            "color": "orange"
+          },
+          {
+            "type": "cone",
+            "x": 1,
+            "y": 19,
+            "color": "orange"
+          },
+          {
+            "type": "cone",
+            "x": 19,
+            "y": 19,
+            "color": "orange"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 1.5,
+            "y": 3,
+            "label": "1"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 18.5,
+            "y": 3,
+            "label": "2"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 18.5,
+            "y": 17,
+            "label": "3"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 1.5,
+            "y": 17,
+            "label": "4"
+          },
+          {
+            "type": "player",
+            "team": "neutral",
+            "x": 10,
+            "y": 12,
+            "label": "9"
+          },
+          {
+            "type": "player",
+            "team": "neutral",
+            "x": 10,
+            "y": 7,
+            "label": "8"
+          },
+          {
+            "type": "ball",
+            "x": 2.5,
+            "y": 2.2
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                10,
+                11
+              ],
+              [
+                6,
+                5.5
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "pass",
+            "points": [
+              [
+                2.8,
+                3
+              ],
+              [
+                5.5,
+                4.5
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                10.8,
+                7.8
+              ],
+              [
+                10.5,
+                12.5
+              ]
+            ]
+          }
+        ]
+      },
+      "setup": "Two 20x20m grids, 8 per grid: 4 on the corners, 2 in the middle (the 9 and 8) and 2 defenders who are passive for the first 5 minutes, then live.",
+      "how": [
+        "Central 9 drops towards the ball and receives; the 8 immediately runs into the space the 9 left.",
+        "9 lays it back to a corner or plays straight into the 8 in the new space.",
+        "8 plays out to the far corner; the 2 central players now repeat from the other side.",
+        "Every 90 seconds the central pair swap with the defenders, then with 2 corner players."
+      ],
+      "link_to_theme": "Introduces the core rule of the session: when someone vacates a space, someone else occupies it.",
+      "coaching_points": [
+        "Drop with a check: move away first, then come short at an angle",
+        "Filling player arrives as the ball goes into the dropping player, not after",
+        "Corner players receive on the open side ready to play into the middle first time"
+      ],
+      "progressions": [
+        "Defenders go fully live",
+        "Two touches maximum"
+      ],
+      "regressions": [
+        "Bigger grid (25x25)",
+        "Only 1 defender"
+      ],
+      "activity_notes": "Two grids at once; roles rotate every 90 seconds so everyone gets the central role."
+    },
+    {
+      "phase": "Technical",
+      "title": "Drop and go: 9 drops, 8 becomes the 9",
+      "minutes": 20,
+      "diagram": {
+        "area": {
+          "type": "half"
+        },
+        "caption": "x2 (one unit on each half). 8 drags their CM away, 9 drops, 8 runs beyond on the blind side. CB chooses: 9 to feet, or diagonal onto the 8's back foot.",
+        "elements": [
+          {
+            "type": "player",
+            "team": "GK",
+            "x": 44.5,
+            "y": 27.5
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 3,
+            "y": 18,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 15,
+            "y": 22,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 26,
+            "y": 29,
+            "label": "9"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 18,
+            "y": 42,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 13,
+            "y": 27,
+            "label": "CM"
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 33,
+            "y": 23,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 33,
+            "y": 36,
+            "label": "CB"
+          },
+          {
+            "type": "ball",
+            "x": 3.8,
+            "y": 17.2
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                26,
+                28
+              ],
+              [
+                18,
+                25
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                16,
+                21
+              ],
+              [
+                22,
+                15
+              ],
+              [
+                30,
+                19
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "pass",
+            "points": [
+              [
+                4.2,
+                17.6
+              ],
+              [
+                29.5,
+                19.5
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                19,
+                41
+              ],
+              [
+                26,
+                33
+              ]
+            ]
+          }
+        ]
+      },
+      "setup": "Two units, one on each half. Per unit: CB, two 8s, 9 (blue) vs their CM and 2 CBs (red) + GK. Coach feeds the CB from the halfway line.",
+      "how": [
+        "Near 8 moves away from the ball, taking their CM with them.",
+        "9 drops into the gap between lines. If their CM jumps to the 9, the 8 spins on the blind side into the striker's spot.",
+        "CB reads it: pass into the 9 to turn (CM stayed with the 8) or diagonal onto the 8's back foot (CM jumped to the 9).",
+        "Far 8 comes inside into the centre to keep two in the central lane; 9 can set to them first time.",
+        "Finish with a shot. Red CBs passive for 6 minutes, then live."
+      ],
+      "link_to_theme": "Teaches the 'temporary 9' rotation from the video and the diagonal passes that unlock it.",
+      "coaching_points": [
+        "9 drops on an angle so they can see the CB and the goal - not straight back",
+        "8 runs on their CM's blind side: behind them, out of their eyeline",
+        "Diagonal pass beats the line; a straight pass into a marked 9 doesn't",
+        "9 receiving under pressure: one-touch round the corner into the run, don't try to turn"
+      ],
+      "questions": [
+        "Their CM went with our 9: where's the space?",
+        "Why is a diagonal pass better here than a straight one?"
+      ],
+      "progressions": [
+        "Add their second CM (blue 4 v red 4 + GK)",
+        "CB must play within 2 touches"
+      ],
+      "regressions": [
+        "Red CM passive",
+        "Coach tells the CM to follow the 9 or the 8 before the rep"
+      ],
+      "activity_notes": "Two units of 7 on separate halves plus 2 spare players who feed and swap in every 3 reps."
+    },
+    {
+      "phase": "Small-sided",
+      "title": "3-zone game: break the line with a dropping 9",
+      "minutes": 20,
+      "diagram": {
+        "area": {
+          "type": "half"
+        },
+        "caption": "Blue build from zone 1, must play through zone 2 (their midfield) to score. A ball into a player who arrived in a space a teammate just left = bonus point.",
+        "elements": [
+          {
+            "type": "zone",
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 55,
+            "color": "blue",
+            "label": "ZONE 1"
+          },
+          {
+            "type": "zone",
+            "x": 12,
+            "y": 0,
+            "w": 14,
+            "h": 55,
+            "color": "yellow",
+            "label": "ZONE 2"
+          },
+          {
+            "type": "player",
+            "team": "GK",
+            "x": 44.5,
+            "y": 27.5
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 4,
+            "y": 36,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 4,
+            "y": 18,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 9,
+            "y": 48,
+            "label": "LB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 9,
+            "y": 7,
+            "label": "RB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 18,
+            "y": 36,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 18,
+            "y": 18,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 32,
+            "y": 29,
+            "label": "9"
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 16,
+            "y": 27,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 21,
+            "y": 44,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 21,
+            "y": 11,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 36,
+            "y": 21,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 36,
+            "y": 36,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 38,
+            "y": 47,
+            "label": ""
+          },
+          {
+            "type": "ball",
+            "x": 4.8,
+            "y": 35.2
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                31,
+                28.5
+              ],
+              [
+                24,
+                27
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "pass",
+            "points": [
+              [
+                5,
+                34.5
+              ],
+              [
+                23,
+                27.5
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                19,
+                37.5
+              ],
+              [
+                26,
+                41
+              ],
+              [
+                34,
+                30
+              ]
+            ]
+          }
+        ]
+      },
+      "setup": "Half pitch split into 3 zones. Blue 7 (2 CBs, 2 FBs, two 8s, 9). Red 6 (3 mids in zone 2, 3 defenders in the attacking zone) + GK. Red mids must stay in zone 2; 3 spare players rotate in every 4 minutes.",
+      "how": [
+        "Coach feeds a blue CB in zone 1. Blue must get the ball through zone 2 (a pass or a carry) before they can attack the goal.",
+        "Goal = 1. Bonus point for any pass that breaks zone 2 into a player who arrived in a space a teammate just left.",
+        "Red win the ball: play into a coach on the halfway line = 1 point for red.",
+        "After 10 minutes, one red mid can follow the dropping 9 out of zone 2."
+      ],
+      "link_to_theme": "Forces the drop-and-go rotation, because a static 9 or 8 won't get through a compact red midfield.",
+      "coaching_points": [
+        "The first movement creates the space, the second one uses it",
+        "Look for the third player: 9 drops, sets, the 8 who ran beyond receives",
+        "CBs: be patient, move the ball side to side until the rotation opens the diagonal",
+        "Far-side 8 tucks in to keep two in the central lane"
+      ],
+      "progressions": [
+        "Red mids can leave zone 2 freely",
+        "Blue max 3 touches each"
+      ],
+      "regressions": [
+        "Only 2 red mids in zone 2",
+        "Remove the red point for a turnover"
+      ],
+      "activity_notes": "Rotation every 4 minutes; waiting group of 3 does a 2v1 pass-and-replace on the side of the pitch so nobody stands still."
+    },
+    {
+      "phase": "Live game scenario",
+      "title": "8v8 + GKs: rotation bonus game",
+      "minutes": 20,
+      "diagram": {
+        "area": {
+          "type": "full"
+        },
+        "caption": "8v8 + GKs on full pitch. Goal from a temporary 9 (any player who arrived in the striker's spot after the 9 dropped) = 2.",
+        "elements": [
+          {
+            "type": "zone",
+            "x": 68.5,
+            "y": 20,
+            "w": 22.9,
+            "h": 15,
+            "color": "yellow",
+            "label": "9 SPOT"
+          },
+          {
+            "type": "player",
+            "team": "GK",
+            "x": 1.5,
+            "y": 27.5
+          },
+          {
+            "type": "player",
+            "team": "GK",
+            "x": 89.9,
+            "y": 27.5
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 22,
+            "y": 36,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 22,
+            "y": 18,
+            "label": "CB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 34,
+            "y": 50,
+            "label": "LB"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 34,
+            "y": 26,
+            "label": "6"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 48,
+            "y": 18,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 52,
+            "y": 38,
+            "label": "8"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 60,
+            "y": 28,
+            "label": "9"
+          },
+          {
+            "type": "player",
+            "team": "A",
+            "x": 66,
+            "y": 6,
+            "label": "RW"
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 44,
+            "y": 28,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 50,
+            "y": 46,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 72,
+            "y": 22,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 72,
+            "y": 36,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 62,
+            "y": 12,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 40,
+            "y": 10,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 30,
+            "y": 40,
+            "label": ""
+          },
+          {
+            "type": "player",
+            "team": "B",
+            "x": 56,
+            "y": 34,
+            "label": ""
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                59,
+                27.5
+              ],
+              [
+                52,
+                27
+              ]
+            ]
+          },
+          {
+            "type": "arrow",
+            "style": "run",
+            "points": [
+              [
+                49,
+                17
+              ],
+              [
+                60,
+                16
+              ],
+              [
+                72,
+                28
+              ]
+            ]
+          }
+        ]
+      },
+      "setup": "Full pitch, 8v8 + GKs. Each team: 2 CBs, LB, 6, two 8s, 9, RW. Yellow '9 spot' cones in each attacking 23 as a visual cue.",
+      "how": [
+        "Restarts always from the GK to a CB.",
+        "Goal = 1. Goal scored or assisted by a temporary 9 (a player who arrived in the striker's spot after the 9 dropped) = 2.",
+        "Coach freeze once every 4 minutes on a good or missed 'someone moves, I move' moment.",
+        "Final 5 minutes: free play."
+      ],
+      "link_to_theme": "Live recognition of when the striker's spot has been vacated and who needs to fill it.",
+      "coaching_points": [
+        "Somebody must always be in the 9 spot when we're in the final third",
+        "Weeks 1 and 2 still apply: two per lane, FB in / 8 out / W in",
+        "Dropping 9 plays one or two touch - don't get turned over in midfield"
+      ],
+      "progressions": [
+        "Double points only if the move started with a diagonal pass"
+      ],
+      "regressions": [
+        "Neutral floater for the team in possession"
+      ],
+      "activity_notes": "Everyone plays; ball-stocks behind both goals."
+    },
+    {
+      "phase": "Game",
+      "title": "11v11 (or numbers available): someone moves, I move",
+      "minutes": 20,
+      "setup": "Full pitch match, normal rules. Swap bibs at 10 minutes.",
+      "how": [
+        "Normal game.",
+        "Focus: when a teammate leaves a space, fill it within 2 seconds.",
+        "Coach tallies diagonal passes that break a line."
+      ],
+      "coaching_points": [
+        "The 9 spot is never empty in the final third",
+        "Diagonal into the back foot of the runner",
+        "Round-the-corner layoffs from the dropping 9"
+      ],
+      "questions": [
+        "When our 9 dropped, who went? Was anybody left in the centre?"
+      ]
+    }
+  ],
+  "safety": [
+    "Shin guards and gum shields for all",
+    "GKs fully kitted for blocks 2-5",
+    "Shots from inside the circle only, on the floor in blocks 2-3"
+  ],
+  "reflection_prompts": [
+    "Did the 8s run on the blind side, or in front of their marker?",
+    "Were the CBs patient enough to wait for the diagonal?",
+    "Is the far-side 8 tucking in, or is the centre left empty?"
+  ]
+}
